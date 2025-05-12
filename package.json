@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "sweetalert2": "^11.21.0"
+  }
+}

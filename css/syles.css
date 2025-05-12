@@ -1,0 +1,10 @@
+:root{
+    --rojo: #E63946;
+    --azul: #457b9d;
+    --amarrillo: #f1ee37;
+    --gris: #f1faee;
+    --negro: #1d3557;
+}
+*{
+    font-family: "Press Start 2P", system-ui;
+}
