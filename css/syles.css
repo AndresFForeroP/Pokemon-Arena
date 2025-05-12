@@ -8,3 +8,11 @@
 *{
     font-family: "Press Start 2P", system-ui;
 }
+
+body {
+    background-image: url("storage/img/fondo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1000px;
+}
