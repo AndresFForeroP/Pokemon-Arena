@@ -71,6 +71,78 @@ const home = `.barra-menu{
         2px  7px 0 rgb(0, 0, 0,0.4),
         3px  3px 0 var(--azul);
     }
+}
+@media(max-width:768px) {
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:80px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:100px;
+            img{
+                width:55px;
+            }
+        }
+        .home-menu{
+            font-size:25px;
+            margin-left:60px;
+            margin-top:30px;
+        }
+        .primera-menu{
+            margin-left:120px;
+        }
+        .septima-menu{
+            margin-left:140px;
+        }
+        .batalla-menu{
+            margin-left:160px;
+            padding-right: 30px;
+        }
+
+    }
+
+}
+
+@media(max-width:1180px) and (min-width:768px){
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:130px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:80px;
+            img{
+                width:80px;
+            }
+        }
+        .home-menu{
+            font-size:35px;
+            margin-left:60px;
+            margin-top:30px;
+        }
+        .primera-menu{
+            margin-left:120px;
+        }
+        .septima-menu{
+            margin-left:140px;
+        }
+        .batalla-menu{
+            margin-left:140px;
+            padding-right: 60px;
+        }
+
+    }
 }`
 const primera = `.barra-menu{
     a{
@@ -143,6 +215,78 @@ const primera = `.barra-menu{
         3px -3px 0 var(--azul),
         2px  7px 0 rgb(0, 0, 0,0.4),
         3px  3px 0 var(--azul);
+    }
+}
+@media(max-width:768px) {
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:80px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:100px;
+            img{
+                width:55px;
+            }
+        }
+        .home-menu{
+            margin-left:40px;
+        }
+        .primera-menu{
+            font-size:20px;
+            margin-left:90px;
+            margin-top:30px;
+        }
+        .septima-menu{
+            margin-left:140px;
+        }
+        .batalla-menu{
+            margin-left:160px;
+            padding-right: 30px;
+        }
+
+    }
+
+}
+
+@media(max-width:1180px) and (min-width:768px){
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:130px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:80px;
+            img{
+                width:80px;
+            }
+        }
+        .home-menu{
+            margin-left:60px;
+        }
+        .primera-menu{
+            font-size:25px;
+            margin-left:85px;
+            margin-top:30px;
+        }
+        .septima-menu{
+            margin-left:140px;
+        }
+        .batalla-menu{
+            margin-left:140px;
+            padding-right: 60px;
+        }
+
     }
 }`
 const septima = `.barra-menu{
@@ -218,6 +362,78 @@ const septima = `.barra-menu{
         2px  7px 0 rgb(0, 0, 0,0.4),
         3px  3px 0 var(--azul);
     }
+}
+@media(max-width:768px) {
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:80px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:100px;
+            img{
+                width:55px;
+            }
+        }
+        .home-menu{
+            margin-left:60px;
+        }
+        .primera-menu{
+            margin-left:120px;
+        }
+        .septima-menu{
+            font-size:23px;
+            margin-left:170px;
+            margin-top:30px;
+        }
+        .batalla-menu{
+            margin-left:220px;
+            padding-right: 30px;
+        }
+
+    }
+
+}
+
+@media(max-width:1180px) and (min-width:768px){
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:130px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:80px;
+            img{
+                width:80px;
+            }
+        }
+        .home-menu{
+            margin-left:60px;
+        }
+        .primera-menu{
+            margin-left:120px;
+        }
+        .septima-menu{
+            font-size:25px;
+            margin-left:60px;
+            margin-top:30px;
+        }
+        .batalla-menu{
+            margin-left:140px;
+            padding-right: 60px;
+        }
+
+    }
 }`
 const batalla = `.barra-menu{
     a{
@@ -292,6 +508,78 @@ const batalla = `.barra-menu{
         2px  7px 0 rgb(0, 0, 0,0.4),
         3px  3px 0 var(--azul);
     }
+}
+@media(max-width:768px) {
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:80px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:100px;
+            img{
+                width:55px;
+            }
+        }
+        .home-menu{
+            margin-left:60px;
+        }
+        .primera-menu{
+            margin-left:120px;
+        }
+        .septima-menu{
+            margin-left:140px;
+        }
+        .batalla-menu{
+            font-size:25px;
+            margin-left:160px;
+            margin-top:30px;
+            padding-right: 30px;
+        }
+
+    }
+
+}
+
+@media(max-width:1180px) and (min-width:768px){
+    .barra-menu{
+        font-size:10px;
+        display:grid;
+        grid-template-columns: repeat(5,20%);
+        overflow-x: scroll;
+        height:130px;
+        width:102%;
+        div{
+            margin:auto;
+        }
+        .icono-menu{
+            width:80px;
+            img{
+                width:80px;
+            }
+        }
+        .home-menu{
+            margin-left:60px;
+        }
+        .primera-menu{
+            margin-left:100px;
+        }
+        .septima-menu{
+            margin-left:140px;
+        }
+        .batalla-menu{
+            font-size:25px;
+            margin-left:140px;
+            margin-top:30px;
+            padding-right: 60px;
+        }
+
+    }
 }`
 export class barraBusqueda extends HTMLElement{
     constructor() {
@@ -328,7 +616,7 @@ export class barraBusqueda extends HTMLElement{
         this.shadowRoot.innerHTML = "";
         this.shadowRoot.appendChild(this.pagina.cloneNode(true));
         switch (this._categoria) {
-            case "menu":
+            case "home":
                 this.estilos.innerHTML = `${home}`
                 this.shadowRoot.appendChild(this.estilos);
                 break;
