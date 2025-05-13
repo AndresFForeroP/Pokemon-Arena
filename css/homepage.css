@@ -53,3 +53,37 @@ html, body {
     padding-bottom: 30px;
     line-height: 30px;
 }
+@media(max-width:768px) {
+    .logo{
+    margin-top: -110vw;
+    width: auto;
+    height: auto;
+    }
+    .contenedor-texto{
+        margin: auto;
+        margin-top: -40vw;
+        overflow-x: auto;
+        height: 400px;
+        .texto{
+            font-size: 0.7rem;
+            text-shadow: 2px 2px 4px var(--gris);
+        }
+    }
+}
+@media(max-width:1180px) and (min-width:768px){
+    .logo{
+        margin-top: -20rem;
+        width: 70%;
+        height: auto;
+    }
+    .contenedor-texto{
+        margin: auto;
+        overflow-x: auto;
+        height: 400px;
+        
+        .texto{
+            font-size: 1.4rem;
+            text-shadow: 2px 2px 4px var(--gris);
+        }
+    }
+}
