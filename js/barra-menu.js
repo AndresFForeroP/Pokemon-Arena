@@ -1,4 +1,5 @@
 const home = `.barra-menu{
+    box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
     }
@@ -110,6 +111,7 @@ const home = `.barra-menu{
 }
 
 @media(max-width:1180px) and (min-width:768px){
+
     .barra-menu{
         font-size:10px;
         display:grid;
@@ -145,6 +147,7 @@ const home = `.barra-menu{
     }
 }`
 const primera = `.barra-menu{
+    box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
     }
@@ -290,6 +293,7 @@ const primera = `.barra-menu{
     }
 }`
 const septima = `.barra-menu{
+    box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
     }
@@ -436,6 +440,7 @@ const septima = `.barra-menu{
     }
 }`
 const batalla = `.barra-menu{
+    box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
     }
