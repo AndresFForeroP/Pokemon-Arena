@@ -291,6 +291,7 @@ const batalla = `.barra-menu{
         3px -3px 0 var(--azul),
         2px  7px 0 rgb(0, 0, 0,0.4),
         3px  3px 0 var(--azul);
+        
     }
 }`
 export class barraBusqueda extends HTMLElement{
@@ -305,7 +306,7 @@ export class barraBusqueda extends HTMLElement{
             <img src="./storage/img/logo-barra.png" alt="">
         </div>
         <div >
-            <a href=""><h1 class="home-menu">HOME</h1></a>
+            <a href="./index.html"><h1 class="home-menu">HOME</h1></a>
         </div>
         <div >
             <a href=""><h1 class="primera-menu">1ra GEN</h1></a>
@@ -314,7 +315,7 @@ export class barraBusqueda extends HTMLElement{
             <a href=""><h1 class="septima-menu">7ra GEN</h1></a>
         </div>
         <div>
-            <a href=""><h1 class="batalla-menu">BATTLE</h1></a>
+            <a href="./pag3.html"><h1 class="batalla-menu">BATTLE</h1></a>
         </div>
         `
         this.shadowRoot.appendChild(this.pagina);
