@@ -168,6 +168,7 @@ const primera = `.barra-menu{
         margin-left: 1rem;
     }
     .primera-menu{
+        margin-left: -40px;
         margin-top: 1.5rem;
         font-size: 2.4rem;
         color: var(--amarrillo);
@@ -257,7 +258,7 @@ const primera = `.barra-menu{
 
 }
 
-@media(max-width:1180px) and (min-width:768px){
+@media(max-width:1390px) and (min-width:768px){
     .barra-menu{
         font-size:10px;
         display:grid;
@@ -314,7 +315,7 @@ const septima = `.barra-menu{
         margin-left: 1rem;
     }
     .primera-menu{
-        margin-left: -1rem;
+        margin-left: -2rem;
         margin-top: 1.7rem;
         color: var(--gris);
     }
@@ -333,6 +334,7 @@ const septima = `.barra-menu{
         color: var(--gris);
     }
     .septima-menu{
+        margin-left:-0.9rem;
         margin-top: 1.5rem;
         font-size: 2.4rem;
         color: var(--amarrillo);
@@ -353,6 +355,7 @@ const septima = `.barra-menu{
         3px  3px 0 var(--azul);
     }
     .batalla-menu{
+        margin-left:2rem;
         margin-top: 1.7rem;
         color: var(--gris);
     }
@@ -404,7 +407,7 @@ const septima = `.barra-menu{
 
 }
 
-@media(max-width:1180px) and (min-width:768px){
+@media(max-width:1390px) and (min-width:768px){
     .barra-menu{
         font-size:10px;
         display:grid;
@@ -429,7 +432,7 @@ const septima = `.barra-menu{
         }
         .septima-menu{
             font-size:25px;
-            margin-left:60px;
+            margin-left:110px;
             margin-top:30px;
         }
         .batalla-menu{
@@ -584,9 +587,12 @@ const batalla = `.barra-menu{
             margin-top:30px;
             padding-right: 60px;
         }
-
     }
 }`
+const definirgeneracion = (pagina) =>{
+    localStorage.setItem("generacion",pagina)
+    window.location.href = "./pag2.html";
+}
 export class barraBusqueda extends HTMLElement{
     constructor() {
         super();
@@ -602,16 +608,17 @@ export class barraBusqueda extends HTMLElement{
             <a href="./index.html"><h1 class="home-menu">HOME</h1></a>
         </div>
         <div >
-            <a href="./pag2.html"><h1 class="primera-menu">1ra GEN</h1></a>
+            <a id= "btn-primera" ><h1 class="primera-menu">1ra GEN</h1></a>
         </div>
         <div>
-            <a href=""><h1 class="septima-menu">7ra GEN</h1></a>
+            <a id= "btn-septima"><h1 class="septima-menu">7ra GEN</h1></a>
         </div>
         <div>
             <a href="./pag3.html"><h1 class="batalla-menu">BATTLE</h1></a>
         </div>
         `
         this.shadowRoot.appendChild(this.pagina);
+        
     }
     set categoria(value){
         this._categoria = value;
@@ -621,6 +628,12 @@ export class barraBusqueda extends HTMLElement{
         this.estilos = document.createElement('style')
         this.shadowRoot.innerHTML = "";
         this.shadowRoot.appendChild(this.pagina.cloneNode(true));
+        this.shadowRoot.querySelector('#btn-primera').addEventListener('click',() =>{
+            definirgeneracion("primera");
+        })
+        this.shadowRoot.querySelector('#btn-septima').addEventListener('click',() =>{
+            definirgeneracion("septima");
+        })
         switch (this._categoria) {
             case "home":
                 this.estilos.innerHTML = `${home}`
