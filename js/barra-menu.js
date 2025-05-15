@@ -1,4 +1,4 @@
-const home = `.barra-menu{
+export const home = `.barra-menu{
     box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
@@ -146,7 +146,7 @@ const home = `.barra-menu{
 
     }
 }`
-const primera = `.barra-menu{
+export const primera = `.barra-menu{
     box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
@@ -292,7 +292,7 @@ const primera = `.barra-menu{
 
     }
 }`
-const septima = `.barra-menu{
+export const septima = `.barra-menu{
     box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
@@ -439,7 +439,7 @@ const septima = `.barra-menu{
 
     }
 }`
-const batalla = `.barra-menu{
+export const batalla = `.barra-menu{
     box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
@@ -641,3 +641,4 @@ export class barraBusqueda extends HTMLElement{
         }
     }
 }
+customElements.define('barra-menu', barraBusqueda); 

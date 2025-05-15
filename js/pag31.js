@@ -1,10 +1,10 @@
 "use strict";
 import {barraBusqueda} from "./barra-menu.js";
 let componenteBusqueda = document.querySelector('barra-menu');
-customElements.define('barra-menu',barraBusqueda)
+
 componenteBusqueda.categoria = "batalla";
-const URL_API = "http://localhost:3000/";
-const GetJson = async(categoria) => {
+export const URL_API = "http://localhost:3000/";
+export const GetJson = async(categoria) => {
     try {
         const respuesta = await fetch(`${URL_API}${categoria}`)
         if (respuesta.status == 200) {
@@ -251,6 +251,7 @@ class tarjets extends HTMLElement {
             <button class="flecha" id="atras"><</button>
             <div class="container-image">
                 <div class="image"></div>
+                
                 <div class="texto">
                     <!-- cambiar el nombre por el del pokemon -->
                     <p class="nombre" >${personaje.nombre}</p>
@@ -265,7 +266,7 @@ class tarjets extends HTMLElement {
                     </ul>
                 </div>
                 <div class="container-btn">
-                    <button class="btn-random">RANDOM</button>
+                    <button id="botonrandom" class="btn-random">RANDOM</button>
                 </div>
             </div>
             <button class="flecha" id="adelante">></button>
@@ -285,6 +286,21 @@ const tarjeta = document.querySelector('tarjet-personaje');
 const tarjetas = document.querySelector('tarjet-personajes');
 customElements.define('tarjet-personaje', tarjet);
 customElements.define('tarjet-personajes', tarjets);
+
+let player1 = "";
+let player2 = "";
+
+document.getElementById("iniciarbatalla").onclick = () => {
+    player1 = tarjeta.data[tarjeta._index];
+     player2 = tarjetas.data[tarjetas._index];
+     document.getElementById("iniciarbatalla").style.display = "none"; 
+  
+   
+};
+
+
+
+
 GetJson("Primera").then(datos =>{
     const Primera = datos;
     console.log(Primera)
@@ -294,3 +310,9 @@ GetJson("Primera").then(datos =>{
         tarjetas.data = Primera;
     })
 })
+customElements.define('barra-menu',barraBusqueda);
+alert(`Inicia la batalla entre ${player1.nombre} y ${player2.nombre}`);
+export {
+    player1,
+    player2
+};

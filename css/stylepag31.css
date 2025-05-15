@@ -10,7 +10,10 @@
     margin: 0;
     font-family: 'Press Start 2P';
 }
-
+a{
+    text-decoration: none;
+    color: #f1ee37;
+}
 body {
     background-image: url('../storage/img/fondo.png');
     background-repeat: no-repeat;

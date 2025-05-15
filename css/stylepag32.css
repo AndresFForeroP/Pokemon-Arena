@@ -1,0 +1,101 @@
+:root{
+  --rojo: #E63946;
+  --azul: #457b9d;
+  --amarrillo: #f1ee37;
+  --gris: #f1faee;
+  --negro:Â#1d3557;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P';
+}
+
+body {
+  background-image: url('../storage/img/pokearena.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-main-cards {
+  padding: 3vw 10vw 0vw 10vw;
+  display: flex;
+  gap: 10vw;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.carta1 {
+  display: flex;
+  border: 10px solid rgb(29, 53, 87);
+  border-radius: 25px;
+  background-color: white;
+  width: 25vw;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.container-image{
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.barravida_out{
+  background-color: var(--rojo);
+  outline: 5px solid var(--azul);
+  width: 20vw;
+  height: 5vh;
+  border-radius: 10px;
+  margin: 1vw;
+  overflow: hidden;
+}
+.barravida_in{
+  background-color: #3df137;
+  width: 15vw;
+  height: 5vh;
+}
+.image {
+  background-image: url(../storage/img/bulbasaur.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  border: 5px solid #457B9D;
+  height: 25vh;
+  width: 17vw;
+  margin: 1vw;
+}
+.texto{
+  justify-self: center;
+  width: 20vw;
+}
+.nombre {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1vh;
+}
+.fuerza {
+  padding: 1.5vh;
+  font-size: 0.8rem;
+  margin-left: 15px;
+}
+.info{
+  justify-self: center;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 15vw;
+}
+.container-btn{
+  justify-content: center;
+  display: flex;
+  margin: 1vw;
+}
+
+.btn-attack {
+  color:var(--rojo);
+  width: 18vw;
+  height: 7vh;
+  background-color:rgb(241, 238, 55);
+  border-radius: 10px;
+... (Quedan 240 líneas)
