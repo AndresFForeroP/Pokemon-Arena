@@ -12,10 +12,11 @@
 }
 
 body {
-  background-image: url('../storage/img/pokearena.jpeg');
+  background-image: url('../storage/img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .container-main-cards {
@@ -98,4 +99,18 @@ body {
   height: 7vh;
   background-color:rgb(241, 238, 55);
   border-radius: 10px;
-... (Quedan 240 líneas)
+}
+
+.atacando {
+  animation: golpe 0.3s ease;
+}
+
+@keyframes golpe {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(50px); }
+  50% { transform: translateX(-50px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+

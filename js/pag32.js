@@ -1,79 +1,86 @@
-
-import {cartaspokemon} from "./mostrar-poks.js";
-import { GetJson } from "./funcionesJson.js";
+"use strict";
 import {barraBusqueda} from "./barra-menu.js";
-import { player1 as p1,player2 as p2} from "./pag31.js";
+let componenteBusqueda = document.querySelector('barra-menu');
+customElements.define('barra-menu',barraBusqueda)
+componenteBusqueda.categoria = "batalla";
+export const URL_API = "http://localhost:3000/";
 
-alert (p1,p2);
-async function obtenerPokemon(nombre) {
-  const url = `"http://localhost:3000/"}`;
-  try {
-    const respuesta = await fetch(url);
-    const datos = await respuesta.json();
-    return {
-      nombre: datos.name,
-      vida: datos.stats.find(stat => stat.stat.name === "vida").base_stat,
-      ataque: datos.stats.find(stat => stat.stat.name === "ataque").base_stat,
-      img: datos.sprites.front_default
-    };
-  } catch (error) {
-    console.error(`Error al obtener a ${nombre}:`, error);
-  }
+let turno = 1;
+
+// estos son los que se simulan, pilas
+const player1 = {
+  nombre: "Pikachu",
+  vida: 100,
+  hp: 100,
+  ataque: 20
+};
+
+const player2 = {
+  nombre: "Charmander",
+  vida: 100,
+  hp: 100,
+  ataque: 18
+};
+
+
+function animarAtaque(playerNum) {
+  const carta = document.getElementById(`cardP${playerNum}`);
+  if (!carta) return;
+
+  carta.classList.add("atacando");
+  setTimeout(() => carta.classList.remove("atacando"), 300);
 }
 
-function updateUI() {
-    document.getElementById('p1Bar').style.width = `${player1.ataque} / ${player2.ataque}` * 100 + '%';
-    document.getElementById('p2Bar').style.width = (player2.hp / player2.vida * 100) + '%';
-    document.getElementById('p1HP').innerText = `${player1.hp} / ${player1.vida} HP`;
-    document.getElementById('p2HP').innerText = `${player2.hp} / ${player2.vida} HP`;
-    document.getElementById('btnP1').disabled = turno !== 1;
-    document.getElementById('btnP2').disabled = turno !== 2;
+
+function atacar(playerNum) {
+  animarAtaque(playerNum);
+
+  const atacante = playerNum === 1 ? player1 : player2;
+  const defensor = playerNum === 1 ? player2 : player1;
+
+  const vidaBarra = playerNum === 1 ? "vidaP2" : "vidaP1";
+  const vidaTexto = playerNum === 1 ? "vidaTextoP2" : "vidaTextoP1";
+
+  
+  const daño = atacante.ataque + Math.floor(Math.random() * 5);
+  defensor.hp = Math.max(0, defensor.hp - daño);
+
+ 
+  const barra = document.getElementById(vidaBarra);
+  const texto = document.getElementById(vidaTexto);
+
+  const porcentaje = (defensor.hp / defensor.vida) * 100;
+  barra.style.width = `${porcentaje}%`;
+  texto.innerText = defensor.hp;
+
+  // esto es para desactivar botones si alguien gana
+  if (defensor.hp <= 0) {
+    alert(`${atacante.nombre} gana la batalla!`);
+    document.getElementById("btnP1").disabled = true;
+    document.getElementById("btnP2").disabled = true;
   }
-  
-  function attack(playerNum) {
-    const attacker = playerNum === 1 ? player1 : player2;
-    const defender = playerNum === 1 ? player2 : player1;
-  
-    const dmg = parseInt(attacker.ataque) + Math.floor(Math.random() * 6);
-    defender.hp = Math.max(0, defender.hp - dmg);
-  
-    log(`${attacker.nombre} hace ${dmg} de daño a ${defender.nombre}`);
-  
-    if (defender.hp === 0) {
-      log(`🎉 ${attacker.nombre} gana la batalla!`);
-      document.getElementById('btnP1').disabled = true;
-      document.getElementById('btnP2').disabled = true;
-      return;
-    }
-  
-    turno = turno === 1 ? 2 : 1;
-    updateUI();
-  }
-  
-  function log(msg) {
-    const logBox = document.getElementById('battleLog');
-    logBox.innerHTML += `<div>${msg}</div>`;
-    logBox.scrollTop = logBox.scrollHeight;
-  }
-  
-  document.getElementById('startBattleBtn').addEventListener('click', startBattle);
-  document.getElementById('btnP1').addEventListener('click', () => attack(1));
-  document.getElementById('btnP2').addEventListener('click', () => attack(2));
-  
-  window.addEventListener('DOMContentLoaded', loadData);
 
-  // Cargar datos
-GetJson("Primera").then(datos => {
-  const Primera = datos;
+  turno = turno === 1 ? 2 : 1;
+  actualizarBotones();
+}
 
-  GetJson("Septima").then(datoss => {
-      Primera.push(...datoss);
+// esto es para controlar turnos
+function actualizarBotones() {
+  document.getElementById("btnP1").disabled = turno !== 1;
+  document.getElementById("btnP2").disabled = turno !== 2;
+}
 
-      // Elegir los jugadores
-      seleccionarJugadores(Primera);
+// Iniciar
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btnP1").addEventListener("click", () => atacar(1));
+  document.getElementById("btnP2").addEventListener("click", () => atacar(2));
 
-      // Iniciar la batalla
-      updateUI();
-  });
+  document.getElementById("vidaP1").style.width = "100%";
+  document.getElementById("vidaP2").style.width = "100%";
+  document.getElementById("vidaTextoP1").innerText = player1.hp;
+  document.getElementById("vidaTextoP2").innerText = player2.hp;
+  document.getElementById("ataqueP1").innerText = player1.ataque;
+  document.getElementById("ataqueP2").innerText = player2.ataque;
+
+  actualizarBotones();
 });
-
