@@ -8,6 +8,10 @@
             "vida": "50",
             "defensa": "10",
             "ataque": "4",
+            "movimiento":"Terremoto",
+            "descripcion":"N.° 143 Pokémon Dormir. Altura: 2,1 m. Peso: 460,0 kg",
+            "potencia":120,
+            
             "habilidades": {
                 "Placaje": 1,
                 "Lenguetazo": 1.2,
@@ -24,6 +28,9 @@
             "vida": "39",
             "defensa": "7",
             "ataque": "9",
+            "movimiento":"Lanzallamas",
+            "descripcion":"N.° 006 Pokémon Llama. Altura: 1,90m. Peso: 90,5 kg",
+            "potencia":120,
             "habilidades": {
                 "Placaje": 1,
                 "Lanzallamas": 1.5,
@@ -40,6 +47,9 @@
             "vida": "35",
             "defensa": "4",
             "ataque": "6",
+            "movimiento":"Rayo",
+            "descripcion":"N.° 042 Pokémon Electrico. Altura: 0,4 m. Peso: 6,2 kg",
+            "potencia":90,
             "habilidades": {
                 "Placaje": 1,
                 "Impactrueno": 1.5,
@@ -56,6 +66,9 @@
             "vida": "20",
             "defensa": "3",
             "ataque": "2",
+            "movimiento":"Salpicadura",
+            "descripcion":"N.° 129 Pokémon Pez. Altura: 0,9 m. Peso: 10,0 kg",
+            "potencia":0,
             "habilidades": {
                 "Salpicadura": 0
             },
@@ -70,6 +83,9 @@
             "vida":"32",
             "defensa":"5",
             "ataque":"5",
+            "movimiento":"Hoja afilada",
+            "descripcion":"N.° 722 Pokémon Planta. Altura: 0,3 m. Peso: 1,5 kg",
+            "potencia":80,
             "habilidades":{
                 "Placaje":1,
                 "Picotazo":1.2,
@@ -86,6 +102,9 @@
             "vida": "30",
             "defensa": "9",
             "ataque": "8",
+            "movimiento":"Lanzallamas",
+            "descripcion":"N.° 727 Pokémon Rudo. Altura: 1,8 m. Peso: 83,0 kg",
+            "potencia":120,
             "habilidades": {
                 "Placaje": 1,
                 "Lanzallamas": 1.5,
@@ -102,6 +121,9 @@
             "vida": "40",
             "defensa": "7",
             "ataque": "9",
+            "movimiento":"Puño voltio",
+            "descripcion":"N.° 807 Pokémon Rayo. Altura: 1,5 m. Peso: 44,5 kg",
+            "potencia":110,
             "habilidades": {
                 "Placaje": 1,
                 "Puño voltio": 1.5,
@@ -118,6 +140,9 @@
             "vida": "50",
             "defensa": "8",
             "ataque": "8",
+            "movimiento":"Canto Mortal",
+            "descripcion":"N.° 821 Pokémon Agua. Altura: 1,80m. Peso: 72 kg",
+            "potencia":120,
             "habilidades": {
                 "Placaje": 1,
                 "Burbujas": 1.5,

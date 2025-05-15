@@ -44,6 +44,50 @@ export const estilocarta = `
     padding: 10px;
     border: solid 1px rgb(125, 182, 204);
 }
+.card-Rowlet{
+    position: relative;
+    width: 320px;
+    height: 430px;
+    background: linear-gradient(160deg, #f3e45e 40%, #bdb03e 100%);
+    border-radius: 15px;
+    box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
+    overflow: hidden;
+    padding: 10px;
+    border: solid 1px rgb(173, 165, 165);
+}
+.card-Incineroar{
+    position: relative;
+    width: 320px;
+    height: 430px;
+    background: linear-gradient(160deg, #dacb4a 10%, #ffed49 60%);
+    border-radius: 15px;
+    box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
+    overflow: hidden;
+    padding: 10px;
+    border: solid 1px rgb(207, 182, 42); 
+}
+.card-Zeraora{
+    position: relative;
+    width: 320px;
+    height: 430px;
+    background: linear-gradient(160deg, #f8e646 40%, #ffe819 100%);
+    border-radius: 15px;
+    box-shadow: 12px 12px 6px rgba(32, 32, 32, 0.2);
+    overflow: hidden;
+    padding: 10px;
+    border: solid 1px rgb(207, 182, 42);
+}
+.card-Primarina{
+    position: relative;
+    width: 320px;
+    height: 430px;
+    background: linear-gradient(160deg, #fff27c 10%, #ffed49 60%);
+    border-radius: 15px;
+    box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
+    overflow: hidden;
+    padding: 10px;
+    border: solid 1px rgb(125, 182, 204);
+}
 .fond-card-Pikachu{
     background-color: #75da86;
     background: linear-gradient(5deg, #f1b23b 16%, #ffcc33 80% );
@@ -72,6 +116,45 @@ export const estilocarta = `
     padding: 15px;  
 }
 .fond-card-Magikarp{
+    background-color: #ffffff;
+    background: linear-gradient(in oklab, #6dc1db .625rem ,#0398c5 35rem,    #bfd5db .625rem );
+    height: px;
+    border: 1px solid rgb(202, 216, 170);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;  
+}
+.fond-card-Rowlet{
+    background-color: #75da86;
+    background: linear-gradient(420deg, #75da86 16%, #5b9b48 80%);
+    height: px;
+    border: 1px solid rgb(108, 143, 75);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+}
+.fond-card-Incineroar{
+    background-color: #ffffff;
+    background: linear-gradient(360deg, #e26140 40% ,#e46735 200%, #f04c23 40% );
+    height: px;
+    border: 1px solid rgb(218, 199, 33);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;  
+}
+.fond-card-Zeraora{
+    background-color: #75da86;
+    background: linear-gradient(5deg, #f1b23b 16%, #ffcc33 80% );
+    border: 1px solid rgb(218, 199, 33);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+}
+.fond-card-Primarina{
     background-color: #ffffff;
     background: linear-gradient(in oklab, #6dc1db .625rem ,#0398c5 35rem,    #bfd5db .625rem );
     height: px;
@@ -113,6 +196,48 @@ export const estilocarta = `
     z-index: -1;
 }
 .card-Magikarp::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #fff6a0 10%, #ebe3ad 90%);
+    z-index: -1;
+}
+.card-Rowlet::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #fff6a0 10%, #bbac3e 100%);
+    z-index: -1;
+}
+.card-Incineroar::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #fff6a0 10%, #ebe3ad 90%);
+    z-index: -1;
+}
+.card-Zeraora::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #fff6a0 10%, #ffe51e 100%);
+}
+.card-Primarina::before {
     content: '';
     position: absolute;
     top: 5px;
@@ -292,7 +417,63 @@ export const estilocarta = `
     background-size: cover;
     background-position: center 50%;
     background-repeat: no-repeat;
-} 
+}
+.logo-icon-planta-Rowlet{
+    position: absolute;
+    width: 37px;
+    height: 47px;
+    background-image: url('../storage/img/pokemons/rowlet/tipo.png');
+    margin-left: 20px;
+    margin-top:-20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+.logo-icon-planta-Incineroar{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-image: url('../storage/img/pokemons/incineroar/tipo.png');
+    margin-left: 25px;
+    margin-top:-6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+.logo-icon-planta-Zeraora{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-image: url('../storage/img/pokemons/zeraora/tipo.png');
+    margin-left: 25px;
+    margin-top:-6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+.logo-icon-planta-Primarina{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-image: url('../storage/img/pokemons/primarina/tipo.png');
+    margin-left: 25px;
+    margin-top:-6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
 .card-image-Pikachu{
     position: relative;
     height: 171px;
@@ -321,6 +502,42 @@ export const estilocarta = `
     margin-bottom: -1px;
 }
 .card-image-Magikarp{
+    position: relative;
+    height: 171px;
+    background: linear-gradient(160deg, #ffffff, #949292, #ffffff,#9e9b9b, #ffffff );
+    border-radius: 4px;
+    border: 2px solid #836c4d;
+    overflow: hidden;
+    margin-bottom: -1px;
+}
+.card-image-Rowlet{
+    position: relative;
+    height: 171px;
+    background: linear-gradient(160deg, #ffffff, #949292, #ffffff,#9e9b9b, #ffffff );
+    border-radius: 8px;
+    border: 4.5px solid #928a8a;
+    overflow: hidden;
+    margin-bottom: -1px;
+}
+.card-image-Incineroar{
+    position: relative;
+    height: 171px;
+    background: linear-gradient(160deg, #ffffff, #949292, #ffffff,#9e9b9b, #ffffff );
+    border-radius: 4px;
+    border: 2px solid #836c4d;
+    overflow: hidden;
+    margin-bottom: -1px;
+}
+.card-image-Zeraora{
+    position: relative;
+    height: 171px;
+    background: linear-gradient(160deg, #ffffff, #949292, #ffffff,#9e9b9b, #ffffff );
+    border-radius: 8px;
+    border: 4.5px solid #928a8a;
+    overflow: hidden;
+    margin-bottom: -1px;
+}
+.card-image-Primarina{
     position: relative;
     height: 171px;
     background: linear-gradient(160deg, #ffffff, #949292, #ffffff,#9e9b9b, #ffffff );
@@ -361,6 +578,42 @@ export const estilocarta = `
     width: 100%;
     height: 100%;
     background-image: url(../storage/img/pokemons/magikarp/magikarp.jpg);
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+.pokemon-image-Rowlet{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../storage/img/pokemons/rowlet/rowlet.jpg);
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+.pokemon-image-Incineroar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../storage/img/pokemons/incineroar/incineroar.jpg);
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+.pokemon-image-Zeraora{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../storage/img/pokemons/zeraora/zeraora.jpg);
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+.pokemon-image-Primarina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../storage/img/pokemons/primarina/primarina.png);
     background-size: cover;
     background-position: center 48%;
     background-repeat: no-repeat;
@@ -418,6 +671,7 @@ export const estilocarta = `
     font-size: 15px;
     width: 28vh;
     text-align: center;
+    margin-left: -15px;
 }
 .attack-damage {
     font-weight: bold;
@@ -432,19 +686,20 @@ export const estilocarta = `
 .weakness {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
 }
 .debilidad{
     margin-left: 70px;
 }
 .weakness-icon-Pikachu {
-    width: 50px;
+    width: 70px;
     height: 50px;
     background-image: url(../storage/img/pokemons/pikachu/debilidad.png);
     background-size: cover;
     border-radius: 60%;
-    margin-left: 5px;
+    margin-top: -20px;
+    margin-left: -2px;
     margin-right: 35px;
     display: flex;
     align-items: center;
@@ -465,11 +720,14 @@ export const estilocarta = `
     font-size: 8px;
 }
 .weakness-icon-Charizard{
-    width: 50px;
-    height: 30px;
+    width: 70px;
+    height: 35px;
     background-image: url(../storage/img/pokemons/charizard/debilidad.png);
     background-size: cover;
-    margin-right: 1px;
+    border-radius: 60%;
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -477,10 +735,68 @@ export const estilocarta = `
 }
 .weakness-icon-Magikarp{
     width: 30px;
-    height: 20px;
+    height: 30px;
     background-image: url(../storage/img/pokemons/magikarp/debilidad.png);
     background-size: cover;
-    margin-right: 1px;
+    border-radius: 60%;
+    margin-left: 10px;
+    margin-right: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.weakness-icon-Rowlet{
+    width: 28px;
+    height: 30px;
+    background-image: url(../storage/img/pokemons/rowlet/debilidad.png);
+    background-size: cover;
+    border-radius: 60%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.weakness-icon-Incineroar{
+    width: 70px;
+    height: 35px;
+    background-image: url(../storage/img/pokemons/incineroar/debilidad.png);
+    background-size: cover;
+    border-radius: 60%;
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: 45px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.weakness-icon-Zeraora {
+    width: 70px;
+    height: 50px;
+    background-image: url(../storage/img/pokemons/zeraora/debilidad.png);
+    background-size: cover;
+    border-radius: 60%;
+    margin-top: -20px;
+    margin-left: -2px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.weakness-icon-Primarina{
+    width: 30px;
+    height: 30px;
+    background-image: url(../storage/img/pokemons/primarina/debilidad.png);
+    background-size: cover;
+    border-radius: 60%;
+    margin-left: 10px;
+    margin-right: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,10 +827,10 @@ export const estilocarta = `
     transform: rotateY(180deg);
 }
 .debilidad-icon-Pikachu{
-    margin-top: -30px;
-    margin-left: 110px;
-    width: 100px;
-    height: 100px;
+    margin-top: -50px;
+    margin-left: 80px;
+    width: 150px;
+    height: 150px;
     background-image: url(../storage/img/pokemons/pikachu/debilidad.png);
     background-size: cover;
 }
@@ -527,18 +843,50 @@ export const estilocarta = `
     background-size: cover;
 }
 .debilidad-icon-Charizard{
-    margin-top: -30px;
-    margin-left: 110px;
+    margin-top: -10px;
+    margin-left: 100px;
     width: 100px;
-    height: 100px;
+    height: 60px;
     background-image: url(../storage/img/pokemons/charizard/debilidad.png);
     background-size: cover;
 }
 .debilidad-icon-Magikarp{
-    margin-top: -30px;
-    margin-left: 110px;
-    width: 100px;
-    height: 100px;
+    margin-top: -10px;
+    margin-left: 125px;
+    width: 60px;
+    height: 60px;
     background-image: url(../storage/img/pokemons/magikarp/debilidad.png);
+    background-size: cover;
+}
+.debilidad-icon-Rowlet{
+    margin-top: -10px;
+    margin-left: 125px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../storage/img/pokemons/rowlet/debilidad.png);
+    background-size: cover;
+}
+.debilidad-icon-Incineroar{
+    margin-top: -10px;
+    margin-left: 100px;
+    width: 100px;
+    height: 60px;
+    background-image: url(../storage/img/pokemons/incineroar/debilidad.png);
+    background-size: cover;
+}
+.debilidad-icon-Zeraora{
+    margin-top: -50px;
+    margin-left: 80px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../storage/img/pokemons/zeraora/debilidad.png);
+    background-size: cover;
+}
+.debilidad-icon-Primarina{
+    margin-top: -10px;
+    margin-left: 125px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../storage/img/pokemons/primarina/debilidad.png);
     background-size: cover;
 }`

@@ -28,7 +28,7 @@ export class cartaspokemon extends HTMLElement {
         </div>
             <div class="detail-card-info">
                 <div class="card-info">
-                N.° 042 Pokémon Electrico. Altura: 0,4 m. Peso: 6,2 kg
+                ${pokemon.descripcion}
                 </div>
             </div>
         <div class="card-attacks">
@@ -37,7 +37,7 @@ export class cartaspokemon extends HTMLElement {
                     <div class="energy-icon-apl"></div>
                 </div>
                 <div class="attack-details">
-                    <div class="attack-name-1">Choque de trueno</div>
+                    <div class="attack-name-1">Placaje</div>
                 </div>
             </div>
             <div class="attack-description">  
@@ -49,8 +49,8 @@ export class cartaspokemon extends HTMLElement {
                     <div class="logo-icon-planta-${pokemon.nombre}"></div>
                 </div>
                 <div class="attack-details">
-                    <div class="attack-name">Electro bola</div>
-                    <div class="attack-damage">80</div>
+                    <div class="attack-name">${pokemon.movimiento}</div>
+                    <div class="attack-damage">${pokemon.potencia}</div>
                 </div>
             </div>
             <div class="attack-description"> 
@@ -59,7 +59,7 @@ export class cartaspokemon extends HTMLElement {
         <div class="card-footer">
             <div class="weakness">
                 <div class="weakness-icon-${pokemon.nombre}"></div>
-                <p>x2</p>
+                <p></p>
                 <p class="debilidad-${pokemon.nombre}">Debilidad</p>
             </div> 
         </div>
