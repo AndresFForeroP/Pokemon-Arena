@@ -22,4 +22,3 @@ pc.addEventListener("click",function(e) {
     alert('click 2pc');
     const pp = 'npcxnpc';
 });
-

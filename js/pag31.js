@@ -1,7 +1,7 @@
 "use strict";
 import {barraBusqueda} from "./barra-menu.js";
 let componenteBusqueda = document.querySelector('barra-menu');
-
+customElements.define('barra-menu',barraBusqueda)
 componenteBusqueda.categoria = "batalla";
 export const URL_API = "http://localhost:3000/";
 export const GetJson = async(categoria) => {
@@ -310,7 +310,6 @@ GetJson("Primera").then(datos =>{
         tarjetas.data = Primera;
     })
 })
-customElements.define('barra-menu',barraBusqueda);
 alert(`Inicia la batalla entre ${player1.nombre} y ${player2.nombre}`);
 export {
     player1,

@@ -6,9 +6,11 @@
     --negro: #1d3557;
 }
 *{
-    font-family: "Press Start 2P", system-ui;
     padding: 0;
     margin: 0;
+}
+barra-menu{
+    font-family: "Press Start 2P", system-ui;
 }
 html, body {
     height: 100%;
@@ -34,7 +36,6 @@ div-pokemones{
     * {
         padding: 0;
         margin: 0;
-        font-family: 'Press Start 2P';
     }
     
     body {
@@ -44,7 +45,6 @@ div-pokemones{
         z-index: -1000;
         background-size: cover;
         height: 100vh;
-        font-family: 'Press Start 2P';
     }
     div-pokemones {
         display: flex;
@@ -60,7 +60,6 @@ div-pokemones{
     * {
         padding: 0;
         margin: 0;
-        font-family: 'Press Start 2P';
     }
     
     body {
@@ -70,7 +69,6 @@ div-pokemones{
         z-index: -1000;
         background-size: cover;
         height: 100vh;
-        font-family: 'Press Start 2P';
     }
     
     
@@ -88,7 +86,6 @@ div-pokemones{
     * {
         padding: 0;
         margin: 0;
-        font-family: 'Press Start 2P';
     }
     
     body {
@@ -116,7 +113,6 @@ div-pokemones{
     * {
         padding: 0;
         margin: 0;
-        font-family: 'Press Start 2P';
     }
     
     body {

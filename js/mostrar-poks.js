@@ -78,13 +78,13 @@ export class cartaspokemon extends HTMLElement {
         setTimeout(() => {
             carta.innerHTML = `
             <div class="carta-volteada">
-                <h1>Pikachu</h1>
+                <h1>${pokemon.nombre}</h1>
                 <h2>Ataque</h2>
-                <p>6</p>
+                <p>${pokemon.ataque}</p>
                 <h2>Defensa</h2>
-                <p>6</p>
+                <p>${pokemon.defensa}</p>
                 <h2>Vida</h2>
-                <p>20</p>
+                <p>${pokemon.vida}</p>
                 <h2>Debilidad</h2>
                 <div class="debilidad-icon-${pokemon.nombre}"></div>
             </div>`
