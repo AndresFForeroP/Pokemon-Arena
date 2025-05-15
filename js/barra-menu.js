@@ -154,7 +154,7 @@ const primera = `.barra-menu{
     display: grid;
     grid-template-columns: 15% 21% 21% 21% 21%;
     background-color: var(--rojo);
-    width: 101%;
+    width: 100.4%;
     height: 6rem;
     margin-top: -0.5rem;
     margin-left: -0.5rem;
@@ -602,7 +602,7 @@ export class barraBusqueda extends HTMLElement{
             <a href="./index.html"><h1 class="home-menu">HOME</h1></a>
         </div>
         <div >
-            <a href=""><h1 class="primera-menu">1ra GEN</h1></a>
+            <a href="./pag2.html"><h1 class="primera-menu">1ra GEN</h1></a>
         </div>
         <div>
             <a href=""><h1 class="septima-menu">7ra GEN</h1></a>

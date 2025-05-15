@@ -1,0 +1,143 @@
+:root{
+    --rojo: #E63946;
+    --azul: #457b9d;
+    --amarrillo: #f1ee37;
+    --gris: #f1faee;
+    --negro: #1d3557;
+}
+*{
+    font-family: "Press Start 2P", system-ui;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url('../storage/img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+div-pokemones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 30vh;
+}
+@media (min-width: 1200px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Press Start 2P';
+    }
+    
+    body {
+        background-image: url('../storage/img/fondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1000;
+        background-size: cover;
+        height: 100vh;
+        font-family: 'Press Start 2P';
+    }
+    div-pokemones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        padding-top: 30vh;
+        
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Press Start 2P';
+    }
+    
+    body {
+        background-image: url('../storage/img/fondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1000;
+        background-size: cover;
+        height: 100vh;
+        font-family: 'Press Start 2P';
+    }
+    
+    
+    
+    div-pokemones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 30vh;  
+    }
+}
+@media  (max-width: 767px) and (orientation: landscape) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Press Start 2P';
+    }
+    
+    body {
+        background-image: url('../storage/img/fondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1000;
+        background-size: cover;
+        height: 100vh;
+        font-family: 'Press Start 2P';
+    }
+    
+    
+    
+    div-pokemones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 30vh;       
+    }
+}
+@media (max-width: 575px) and (orientation: portrait) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Press Start 2P';
+    }
+    
+    body {
+        background-image: url('../storage/img/fondo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1000;
+        background-size: cover;
+        height: 200vh;
+        font-family: 'Press Start 2P';
+    }
+    
+    
+    
+    div-pokemones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        padding-top: 30vh;
+        
+    }
+}
