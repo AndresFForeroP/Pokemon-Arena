@@ -116,6 +116,169 @@ class tarjet extends HTMLElement {
                 font-family: 'Press Start 2P';
                 cursor: pointer;
             }
+            @media (max-width: 1440px) and (min-width: 1000px){
+                .carta1 {
+                    width: 80vw;  
+                    height: auto;
+                }
+                .container-image {
+                    width: 70vw; 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .image{
+                    width: 25vw;
+                    height: 25vh;
+                    border: 6px solid #457B9D;
+                }
+                .texto{
+
+                    margin: 0;
+                    padding: 0;
+                    width: 40vw;
+                    text-align: justify;
+                }
+                .nombre{
+                    font-size: 1.5rem;
+                    width: 10vw;
+                    justify-self: center;
+                }
+                .fuerza{
+                    font-size: 1.5rem;
+                    margin: 1vh 0 1vh 0;
+                    padding: 0;
+                }
+                .info{
+                    font-size: 1.5rem;
+                    text-align: justify;
+                }
+                .btn-random{
+                    width: 40vw;
+                    height: 5vh;
+                    font-size: 1.5rem;
+                }
+                .container-btn{
+                    grid-column: span 2 / span 2;
+                }
+                ul{
+                    font-size: 1.4rem;
+                }
+            }
+            @media (max-width: 1000px) and (min-width: 500px){
+                .container-main-cards {
+                    width: 100vw;
+                    gap:2vh;
+                    display: flex;
+                    flex-direction: column; 
+                }
+                .carta1 {
+                    width: 90vw;  
+                    height: auto;
+                }
+                .container-image {
+                    width: 70vw; 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .flecha{
+                    width: 10vw;
+                }
+                .image{
+                    width: 35vw;
+                    height: 20vh;
+                    margin: 0vw;
+                }
+                .texto{
+                    margin: 0;
+                    padding: 0;
+                    width: 30vw;
+                    text-align: justify;
+                }
+                .nombre{
+                    font-size: 1.3rem;
+                    width: 10vw;
+                    justify-self: center;
+                }
+                .fuerza{
+                    font-size: 1.5rem;
+                    margin: 1vh 0 1vh 0;
+                    padding: 0;
+                }
+                .info{
+                    font-size: 1.3rem;
+                    text-align: justify;
+                }
+                .btn-random{
+                    font-size: 1.3rem;
+                    width: 40vw;
+                }
+                .container-btn{
+                    grid-column: span 2 / span 2;
+                }
+                ul{
+                    font-size: 1.3rem;
+                }
+            }
+            @media (max-width: 500px){
+                .container-main-cards {
+                    width: 100vw;
+                    gap:2vh;
+                    display: flex;
+                    flex-direction: column; 
+                }
+                .versus{
+                    font-size: 3rem;
+                }
+                .carta1 {
+                    width: 90vw;  
+                    height: auto;
+                }
+                .flecha{
+                    margin: 0 1vw 0 1vw;
+                    width: 5vw;
+                    font-size: 1.5rem;
+                }
+                .container-image {
+                    width: 80vw; 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .image{
+                    width: 30vw;
+                    height: 8vh;
+                    margin: 1vw;
+                }
+                .texto{
+                    margin: 0;
+                    padding: 0;
+                    width: 30vw;
+                    text-align: justify;
+                }
+                .nombre{
+                    font-size: 0.6rem;
+                    width: 10vw;
+                    justify-self: center;
+                }
+                .fuerza{
+                    font-size: 0.6rem;
+                    margin: 1vh 0 1vh 0;
+                    padding: 0;
+                }
+                .info{
+                    font-size: 0.5rem;
+                    text-align: justify;
+                }
+                .btn-random{
+                    font-size: 1rem;
+                    width: 40vw;
+                }
+                .container-btn{
+                    grid-column: span 2 / span 2;
+                }
+                ul{
+                    font-size: 0.6rem;
+                }
+            }
         </style>
         <div class="carta1">
             <button class="flecha" id="atras"><</button>
@@ -245,6 +408,169 @@ class tarjets extends HTMLElement {
                 font-size: 1rem;
                 font-family: 'Press Start 2P';
                 cursor: pointer;
+            }
+            @media (max-width: 1440px) and (min-width: 1000px){
+                .carta1 {
+                    width: 80vw;  
+                    height: auto;
+                }
+                .container-image {
+                    width: 70vw; 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .image{
+                    width: 25vw;
+                    height: 25vh;
+                    border: 6px solid #457B9D;
+                }
+                .texto{
+
+                    margin: 0;
+                    padding: 0;
+                    width: 40vw;
+                    text-align: justify;
+                }
+                .nombre{
+                    font-size: 1.5rem;
+                    width: 10vw;
+                    justify-self: center;
+                }
+                .fuerza{
+                    font-size: 1.5rem;
+                    margin: 1vh 0 1vh 0;
+                    padding: 0;
+                }
+                .info{
+                    font-size: 1.5rem;
+                    text-align: justify;
+                }
+                .btn-random{
+                    width: 40vw;
+                    height: 5vh;
+                    font-size: 1.5rem;
+                }
+                .container-btn{
+                    grid-column: span 2 / span 2;
+                }
+                ul{
+                    font-size: 1.4rem;
+                }
+            }
+            @media (max-width: 1000px) and (min-width: 500px){
+                .container-main-cards {
+                    width: 100vw;
+                    gap:2vh;
+                    display: flex;
+                    flex-direction: column; 
+                }
+                .carta1 {
+                    width: 90vw;  
+                    height: auto;
+                }
+                .container-image {
+                    width: 70vw; 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .flecha{
+                    width: 10vw;
+                }
+                .image{
+                    width: 35vw;
+                    height: 20vh;
+                    margin: 0vw;
+                }
+                .texto{
+                    margin: 0;
+                    padding: 0;
+                    width: 30vw;
+                    text-align: justify;
+                }
+                .nombre{
+                    font-size: 1.3rem;
+                    width: 10vw;
+                    justify-self: center;
+                }
+                .fuerza{
+                    font-size: 1.5rem;
+                    margin: 1vh 0 1vh 0;
+                    padding: 0;
+                }
+                .info{
+                    font-size: 1.3rem;
+                    text-align: justify;
+                }
+                .btn-random{
+                    font-size: 1.3rem;
+                    width: 40vw;
+                }
+                .container-btn{
+                    grid-column: span 2 / span 2;
+                }
+                ul{
+                    font-size: 1.3rem;
+                }
+            }
+            @media (max-width: 500px){
+                .container-main-cards {
+                    width: 100vw;
+                    gap:2vh;
+                    display: flex;
+                    flex-direction: column; 
+                }
+                .versus{
+                    font-size: 3rem;
+                }
+                .carta1 {
+                    width: 90vw;  
+                    height: auto;
+                }
+                .flecha{
+                    margin: 0 1vw 0 1vw;
+                    width: 5vw;
+                    font-size: 1.5rem;
+                }
+                .container-image {
+                    width: 80vw; 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .image{
+                    width: 30vw;
+                    height: 8vh;
+                    margin: 1vw;
+                }
+                .texto{
+                    margin: 0;
+                    padding: 0;
+                    width: 30vw;
+                    text-align: justify;
+                }
+                .nombre{
+                    font-size: 0.6rem;
+                    width: 10vw;
+                    justify-self: center;
+                }
+                .fuerza{
+                    font-size: 0.6rem;
+                    margin: 1vh 0 1vh 0;
+                    padding: 0;
+                }
+                .info{
+                    font-size: 0.5rem;
+                    text-align: justify;
+                }
+                .btn-random{
+                    font-size: 1rem;
+                    width: 40vw;
+                }
+                .container-btn{
+                    grid-column: span 2 / span 2;
+                }
+                ul{
+                    font-size: 0.6rem;
+                }
             }
         </style>
         <div class="carta1">
