@@ -22,7 +22,7 @@ body {
 .container-main-cards {
     padding: 3vw 10vw 0vw 10vw;
     display: flex;
-    gap: 12vw;
+    gap: 10vw;
     justify-items: center;
     align-items: center;
     justify-self: center;
@@ -33,7 +33,7 @@ body {
     border: 10px solid rgb(29, 53, 87);
     border-radius: 25px;
     background-color: white;
-    width: 30vw;
+    width: 31vw;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -149,7 +149,8 @@ body {
         width: 100vw;
         gap:5vh;
         display: flex;
-        flex-direction: column; 
+        flex-direction: row;
+        justify-content: center; 
     }
     .carta1 {
         width: 90vw;  
@@ -197,7 +198,7 @@ body {
     .btn-luchar{
         margin: 5vh;
         height: 10vh;
-        width: 40vw;
+        width: 30vw;
     }
 }
 @media (max-width: 1000px) and (min-width: 500px){
