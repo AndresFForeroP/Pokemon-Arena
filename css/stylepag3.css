@@ -8,15 +8,19 @@
 *{
     font-family: "Press Start 2P", system-ui;
 }
-body {
+body{
+    padding: 0;
+    margin: 0;
+}
+.all{
     background-image: url("./../storage/img/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-}
-.all{
-    width:100%;
+    width: 100vw;
+    position: fixed;
+    overflow: auto;
     align-items: center;
     justify-items: center;
 }

@@ -7,84 +7,74 @@
 }
 *{
     font-family: "Press Start 2P", system-ui;
-    padding: 0;
-    margin: 0;
 }
-html, body {
-    height: 100%;
+body {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+.container-main{
     background-image: url('../storage/img/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
-
-.logo {
-    z-index: 1;
-    position: relative;
-    height: 300px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
 }
-.logo-container{
-    display: flex;
-    justify-content: center;
+.container-inner{
+    justify-items: center;
     align-items: center;
-    height: 16vh;
-    padding-top: 270px;
+    align-content: center;
+    gap: 10vh;
 }
-
+.logo {
+    width: 30vw;
+}
 .contenedor-texto {
-    margin-top: 150px;
-   justify-content: center;
-   background-color: #6D93F56B;
-    margin-left: 180px;
-    margin-right: 180px;
+    padding: 3vw;
+    justify-content: center;
+    align-content: center;
+    background-color: #6D93F56B;
     border-radius: 30px;
+    width: 60vw;
 }
-
-.texto {
-    padding-top: 30px;
+.titulo{
     text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.texto {
+    text-align: justify;
     font-weight: 400;
-    font-size: 20px;
-    padding-bottom: 30px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 2.5vh;
 }
-@media(max-width:768px) {
+@media(max-width: 1440px) and (min-width: 1000px){
     .logo{
-    margin-top: -110vw;
-    width: auto;
-    height: auto;
-    }
-    .contenedor-texto{
-        margin: auto;
-        margin-top: -40vw;
-        overflow-x: auto;
-        height: 400px;
-        .texto{
-            font-size: 0.7rem;
-            text-shadow: 2px 2px 4px var(--gris);
-        }
+        width: 60vw;
     }
 }
-@media(max-width:1180px) and (min-width:768px){
-    .logo{
-        margin-top: -20rem;
-        width: 70%;
-        height: auto;
-    }
-    .contenedor-texto{
-        margin: auto;
-        overflow-x: auto;
-        height: 400px;
-        
-        .texto{
-            font-size: 1.4rem;
-            text-shadow: 2px 2px 4px var(--gris);
-        }
-    }
 
+@media(max-width:1000px) and (min-width: 500px) {
+    .logo{
+        width: 70vw;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .texto{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 500px) {
+    .logo{
+        width: 70vw;
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+    .texto{
+        font-size: 0.5rem;
+    }
 }

@@ -21,10 +21,11 @@ barra-menu{
     position: fixed;
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 .container_2{
     padding: 3vw;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     align-items: center;
     align-content: center;
@@ -33,7 +34,7 @@ div-pokemones{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 10vw;
+    gap: 5vw;
     justify-content: center;
 }
 @media (max-width: 1000px) {
