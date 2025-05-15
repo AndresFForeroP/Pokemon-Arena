@@ -131,7 +131,7 @@ class tarjet extends HTMLElement {
                     <p class="fuerza">Defensa:</p>
                     <p class="info">${personaje.defensa}</p>
                     <ul>
-                        ${Object.entries(personaje.habilidades).map(([key, value]) => `<li>${key} (${value})</li>`).join('')}
+                        ${Object.entries(personaje.habilidades).map(([key, value]) => `<li>${key} (x${value})</li>`).join('')}
                     </ul>
                 </div>
                 <div class="container-btn">
@@ -261,7 +261,7 @@ class tarjets extends HTMLElement {
                     <p class="fuerza">Defensa:</p>
                     <p class="info">${personaje.defensa}</p>
                     <ul>
-                        ${Object.entries(personaje.habilidades).map(([key, value]) => `<li>${key} (${value})</li>`).join('')}
+                        ${Object.entries(personaje.habilidades).map(([key, value]) => `<li>${key} (x${value})</li>`).join('')}
                     </ul>
                 </div>
                 <div class="container-btn">
