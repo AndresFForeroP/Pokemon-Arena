@@ -2,7 +2,7 @@ export const estilocarta = `
 .card-Pikachu{
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #f8e646 40%, #ffe819 100%);
     border-radius: 15px;
     box-shadow: 12px 12px 6px rgba(32, 32, 32, 0.2);
@@ -13,7 +13,7 @@ export const estilocarta = `
 .card-Snorlax{
     position: relative;
     width: 300px;
-    height: 440px;
+    height: 450px;
     background: linear-gradient(160deg, #f3e45e 0%, #e9db62 100%);
     border-radius: 15px;
     box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
@@ -25,7 +25,7 @@ export const estilocarta = `
 .card-Charizard {
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #dacb4a 10%, #ffed49 60%);
     border-radius: 15px;
     box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
@@ -36,7 +36,7 @@ export const estilocarta = `
 .card-Magikarp{
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #fff27c 10%, #ffed49 60%);
     border-radius: 15px;
     box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
@@ -47,7 +47,7 @@ export const estilocarta = `
 .card-Rowlet{
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #f3e45e 40%, #bdb03e 100%);
     border-radius: 15px;
     box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
@@ -58,7 +58,7 @@ export const estilocarta = `
 .card-Incineroar{
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #dacb4a 10%, #ffed49 60%);
     border-radius: 15px;
     box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
@@ -69,7 +69,7 @@ export const estilocarta = `
 .card-Zeraora{
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #f8e646 40%, #ffe819 100%);
     border-radius: 15px;
     box-shadow: 12px 12px 6px rgba(32, 32, 32, 0.2);
@@ -80,7 +80,7 @@ export const estilocarta = `
 .card-Primarina{
     position: relative;
     width: 320px;
-    height: 430px;
+    height: 450px;
     background: linear-gradient(160deg, #fff27c 10%, #ffed49 60%);
     border-radius: 15px;
     box-shadow: 40px 50px 6px rgba(32, 32, 32, 0.2);
