@@ -636,7 +636,7 @@ GetJson("Primera").then(datos =>{
         tarjetas.data = Primera;
     })
 })
-alert(`Inicia la batalla entre ${player1.nombre} y ${player2.nombre}`);
+
 export {
     player1,
     player2

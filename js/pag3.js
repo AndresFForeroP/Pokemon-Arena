@@ -18,13 +18,13 @@ player.addEventListener("click",function(e) {
         
         setTimeout(() => {
             localStorage.setItem("modo", pp);
-            window.location.href = "pag32.html";
+            window.location.href = "pag31.html";
         }, 300);
     }).catch(err => {
         console.warn("No se pudo reproducir el sonido:", err);
        
         localStorage.setItem("modo", pp);
-        window.location.href = "pag32.html";
+        window.location.href = "pag31.html";
     });
 });
 
@@ -41,7 +41,7 @@ pcplayer.addEventListener("click", function(e) {
     }).catch(err => {
         console.warn("Error al reproducir sonido:", err);
         localStorage.setItem("modo", pp);
-        window.location.href = "pag32.html";
+        window.location.href = "pag31.html";
         
     });
 });
@@ -60,7 +60,7 @@ pc.addEventListener("click", function(e) {
     }).catch(err => {
         console.warn("Error al reproducir sonido:", err);
         localStorage.setItem("modo", pp);
-        window.location.href = "pag32.html";
+        window.location.href = "pag31.html";
         alert('click 2pc');
     });
 });
