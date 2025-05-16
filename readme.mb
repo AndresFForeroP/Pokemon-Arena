@@ -1,7 +1,3 @@
-Claro, aquí tienes un ejemplo de un archivo `README.md` para tu proyecto de una arena de combates por turnos de Pokémon. Está estructurado para proporcionar una descripción clara del proyecto, instrucciones de uso, y detalles técnicos:
-
----
-
 # 🕹️ Pokémon Battle Arena
 
 Una página web de arena de combates por turnos basada en el universo Pokémon. En esta arena, los entrenadores pueden enfrentarse entre sí o contra la CPU, eligiendo entre Pokémon de la **primera** y **séptima generación**.
