@@ -1,9 +1,11 @@
+//importaciones de los modulos para la funcionalidad del del codigo!!
 "use strict";
 import {barraBusqueda} from "./barra-menu.js";
 import {GetJson} from "./funcionesJson.js";
 let componenteBusqueda = document.querySelector('barra-menu');
 customElements.define('barra-menu',barraBusqueda)
 componenteBusqueda.categoria = "batalla";
+//crea el apartado de la  tarjeta aplicando el style y la base de este 
 class tarjet extends HTMLElement {
     constructor() {
         super();
@@ -102,16 +104,13 @@ class tarjet extends HTMLElement {
             }
             @media (max-width: 1440px) and (min-width: 1000px){
                 .carta1 {
-                    width: 80vw;  
+                    width: 30vw;  
                     height: auto;
                 }
                 .container-image {
-                    width: 70vw; 
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    width: 20vw;
                 }
                 .image{
-                    width: 25vw;
                     height: 25vh;
                     border: 6px solid #457B9D;
                 }
@@ -119,25 +118,25 @@ class tarjet extends HTMLElement {
 
                     margin: 0;
                     padding: 0;
-                    width: 40vw;
+                    width: 20vw;
                     text-align: justify;
                 }
                 .nombre{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     width: 10vw;
                     justify-self: center;
                 }
                 .fuerza{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     margin: 1vh 0 1vh 0;
                     padding: 0;
                 }
                 .info{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     text-align: justify;
                 }
                 .btn-random{
-                    width: 40vw;
+                    width: 20vw;
                     height: 5vh;
                     font-size: 1.5rem;
                 }
@@ -145,7 +144,7 @@ class tarjet extends HTMLElement {
                     grid-column: span 2 / span 2;
                 }
                 ul{
-                    font-size: 1.4rem;
+                    font-size: 1rem;
                 }
             }
             @media (max-width: 1000px) and (min-width: 500px){
@@ -400,16 +399,13 @@ class tarjet extends HTMLElement {
             }
             @media (max-width: 1440px) and (min-width: 1000px){
                 .carta1 {
-                    width: 80vw;  
+                    width: 30vw;  
                     height: auto;
                 }
                 .container-image {
-                    width: 70vw; 
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    width: 20vw;
                 }
                 .image{
-                    width: 25vw;
                     height: 25vh;
                     border: 6px solid #457B9D;
                 }
@@ -417,25 +413,25 @@ class tarjet extends HTMLElement {
 
                     margin: 0;
                     padding: 0;
-                    width: 40vw;
+                    width: 20vw;
                     text-align: justify;
                 }
                 .nombre{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     width: 10vw;
                     justify-self: center;
                 }
                 .fuerza{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     margin: 1vh 0 1vh 0;
                     padding: 0;
                 }
                 .info{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     text-align: justify;
                 }
                 .btn-random{
-                    width: 40vw;
+                    width: 20vw;
                     height: 5vh;
                     font-size: 1.5rem;
                 }
@@ -443,7 +439,7 @@ class tarjet extends HTMLElement {
                     grid-column: span 2 / span 2;
                 }
                 ul{
-                    font-size: 1.4rem;
+                    font-size: 1rem;
                 }
             }
             @media (max-width: 1000px) and (min-width: 500px){
@@ -587,6 +583,7 @@ class tarjet extends HTMLElement {
             <button class="flecha" id="adelante">></button>
         </div>
         `;
+    //se le ingresa funcionalidad al apartado de la tarjeta 
     this.shadowRoot.getElementById("atras").onclick = () => {
         this._index = (this._index - 1 + this._data.length) % this._data.length;
         this.render();
@@ -601,6 +598,7 @@ class tarjet extends HTMLElement {
     };
   };
 };
+//se define la tarjeta del personaje 
 const tarjeta = document.querySelector('tarjet-personaje');
 const tarjetas = document.querySelector('tarjet-personajes');
 customElements.define('tarjet-personaje', tarjet);
@@ -608,7 +606,7 @@ customElements.define('tarjet-personajes', tarjets);
 
 let player1 = "";
 let player2 = "";
-
+//se toma del json y se exporta a lo seleccionado en la tarjeta
 document.getElementById("iniciarbatalla").onclick = () => {
     player1 = tarjeta.data[tarjeta._index];
      player2 = tarjetas.data[tarjetas._index];

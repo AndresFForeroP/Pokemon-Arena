@@ -156,18 +156,13 @@ body {
         width: 100vw;
         gap:2vh;
         display: flex;
-        flex-direction: column;
         justify-content: center; 
     }
     .carta1 {
-        width: 90vw;  
+        width: 30vw;  
         height: auto;
     }
-    .container-image {
-        width: 90vw; 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+
     .image{
         width: 30vw;
         height: 30vh;
@@ -181,7 +176,7 @@ body {
         text-align: justify;
     }
     .nombre{
-        font-size: 1.5rem;
+        font-size: 1rem;
         width: 10vw;
         justify-self: center;
     }
@@ -198,9 +193,6 @@ body {
         width: 40vw;
         height: 5vh;
         font-size: 1.5rem;
-    }
-    .container-btn{
-        grid-column: span 2 / span 2;
     }
     .btn-luchar{
         margin: 5vh;

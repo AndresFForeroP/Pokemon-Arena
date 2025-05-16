@@ -1,3 +1,4 @@
+//estilos de las cartas individuales para que cada pokemon tenga su color distintivo  y el mismo diseño de carta  
 export const estilocarta = `
 .card-Pikachu{
     position: relative;
