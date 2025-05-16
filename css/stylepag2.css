@@ -1,0 +1,45 @@
+:root{
+    --rojo: #E63946;
+    --azul: #457b9d;
+    --amarrillo: #f1ee37;
+    --gris: #f1faee;
+    --negro: #1d3557;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+barra-menu{
+    font-family: "Press Start 2P", system-ui;
+}
+.container {
+    background-image: url('../storage/img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+.container_2{
+    padding: 3vw;
+    height: 80vh;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+}
+div-pokemones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: center;
+}
+@media (max-width: 1000px) {
+    div-pokemones{
+        gap: 4vw;
+        justify-content: center;
+    }
+}

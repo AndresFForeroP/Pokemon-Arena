@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylepag2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="module" src="./js/pag2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <barra-menu>
+        </barra-menu>
+        <div class="container_2">
+            <div-pokemones></div-pokemones>
+        </div>
+    </div>
+
+   
+
+      <script>
+        document.addEventListener("click", function () {
+          const musicaFondo = document.getElementById('musicaFondo');
+          if (musicaFondo) {
+            musicaFondo.volume = 0.1; // Ajusta el volumen
+            musicaFondo.play().catch((error) => {
+              console.error("Error al intentar reproducir el audio: ", error);
+            });
+          }
+        }, { once: true });
+      </script>
+
+<audio id="musicaFondo" loop>
+  <source src="./storage/audios/musica-de-fondo.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+
+<script src="./js/musicafondo.js" defer></script>
+    
+</body>
+</html>

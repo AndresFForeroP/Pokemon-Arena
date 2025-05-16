@@ -1,0 +1,20 @@
+:root{
+  --rojo: #E63946;
+  --azul: #457b9d;
+  --amarrillo: #f1ee37;
+  --gris: #f1faee;
+  --negro:Â#1d3557;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P';
+}
+
+body {
+  background-image: url('../storage/img/fondo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

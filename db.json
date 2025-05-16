@@ -1,0 +1,170 @@
+{
+    "Primera":[
+        {
+            "id": "143",
+            "nombre": "Snorlax",
+            "tipo": "Normal",
+            "debilidad": "",
+            "generacion": 1,
+            "vida": "50",
+            "defensa": "10",
+            "ataque": "4",
+            "movimiento":"Terremoto",
+            "descripcion":"N.° 143 Pokémon Dormir. Altura: 2,1 m. Peso: 460,0 kg",
+            "potencia":120,
+            
+            "habilidades": {
+                "Placaje": 1,
+                "Lenguetazo": 1.2,
+                "Golpe Cuerpo": 1.4,
+                "Terremoto": 1.6
+            },
+            "gif": "https://media1.tenor.com/m/DMpbzFxAxRYAAAAd/snorlax.gif",
+            "imagen": "https://wallpapers-clan.com/wp-content/uploads/2024/04/pokemon-snorlax-aesthetic-preview-desktop-wallpaper.jpg"
+        },
+        {
+            "id": "6",
+            "nombre": "Charizard",
+            "tipo": "Fuego",
+            "debilidad": "Agua",
+            "generacion": 1,
+            "vida": "39",
+            "defensa": "7",
+            "ataque": "9",
+            "movimiento":"Lanzallamas",
+            "descripcion":"N.° 006 Pokémon Llama. Altura: 1,90m. Peso: 90,5 kg",
+            "potencia":120,
+            "habilidades": {
+                "Placaje": 1,
+                "Lanzallamas": 1.5,
+                "Vuelo": 1.3,
+                "Giro fuego": 1.4
+            },
+            "gif": "https://media.tenor.com/Zu88f9GsbzYAAAAi/charizard-dance.gif",
+            "imagen": "https://tiermaker.com/images/templates/todos-los-pokemones-de-tipo-fuego-gen-1-8-ultima-evolucion-15593434/155934341675712802.jpg"
+        },
+        {
+            "id": "25",
+            "nombre": "Pikachu",
+            "tipo": "Eléctrico",
+            "debilidad": "Planta",
+            "generacion": 1,
+            "vida": "35",
+            "defensa": "4",
+            "ataque": "6",
+            "movimiento":"Rayo",
+            "descripcion":"N.° 042 Pokémon Electrico. Altura: 0,4 m. Peso: 6,2 kg",
+            "potencia":90,
+            "habilidades": {
+                "Placaje": 1,
+                "Impactrueno": 1.5,
+                "Rayo": 1.6,
+                "Electrobola": 1.4
+            },
+            "gif": "https://media1.tenor.com/m/VK6sQunGgxEAAAAC/energy.gif",
+            "imagen": "https://th.bing.com/th/id/OIP.71QPNUy5K8-oV__Tr4x5NAHaHa?cb=iwp2&w=1024&h=1024&rs=1&pid=ImgDetMain"
+        },
+        {
+            "id": "129",
+            "nombre": "Magikarp",
+            "tipo": "Agua",
+            "debilidad": "Electrico",
+            "generacion": 1,
+            "vida": "20",
+            "defensa": "3",
+            "ataque": "2",
+            "movimiento":"Salpicadura",
+            "descripcion":"N.° 129 Pokémon Pez. Altura: 0,9 m. Peso: 10,0 kg",
+            "potencia":0,
+            "habilidades": {
+                "Salpicadura": 0
+            },
+            "gif": "https://media1.tenor.com/m/gB8dYTxuXlMAAAAC/magikarp-glitch.gif",
+            "imagen": "https://rare-gallery.com/fullwalls/91431-Magikarp-Pokmon.jpg"
+        }],
+    "Septima":[
+        {
+            "id":"722",
+            "nombre":"Rowlet",
+            "tipo":"Planta",
+            "debilidad": "Fuego",
+            "generacion":7,
+            "vida":"32",
+            "defensa":"5",
+            "ataque":"5",
+            "movimiento":"Hoja afilada",
+            "descripcion":"N.° 722 Pokémon Planta. Altura: 0,3 m. Peso: 1,5 kg",
+            "potencia":80,
+            "habilidades":{
+                "Placaje":1,
+                "Picotazo":1.2,
+                "Hoja afilada":1.5,
+                "Pajaro osado":1.4
+            },
+            "gif": "https://media1.tenor.com/m/kzLmoispYPUAAAAC/rowlet-pokemon.gif",
+            "imagen":"https://imgix.ranker.com/list_img_v2/12534/2892534/original/2892534?w=817&h=427&fm=jpg&q=50&fit=crop"
+        },
+        {
+            "id": "727",
+            "nombre": "Incineroar",
+            "tipo": "Fuego",
+            "debilidad": "Agua",
+            "generacion": 7,
+            "vida": "30",
+            "defensa": "9",
+            "ataque": "8",
+            "movimiento":"Lanzallamas",
+            "descripcion":"N.° 727 Pokémon Rudo. Altura: 1,8 m. Peso: 83,0 kg",
+            "potencia":120,
+            "habilidades": {
+                "Placaje": 1,
+                "Lanzallamas": 1.5,
+                "Garra umbría": 1.4,
+                "Patada baja": 1.3
+            },
+            "gif": "https://media1.tenor.com/m/K3Nzq9Ccn98AAAAd/incineroar-pokemon.gif",
+            "imagen": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/abdc9010-8197-4474-aee4-5d11ac37bc3c/dcs6385-7b676b85-664e-45d9-a7bf-9e60649c1d07.jpg/v1/fill/w_1280,h_960,q_75,strp/incineroar_by_skarltano_dcs6385-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvYWJkYzkwMTAtODE5Ny00NDc0LWFlZTQtNWQxMWFjMzdiYzNjXC9kY3M2Mzg1LTdiNjc2Yjg1LTY2NGUtNDVkOS1hN2JmLTllNjA2NDljMWQwNy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.8Ib7Q7eVGKGQnssRJ7fVW_l9XOsFrAsKSEAKYG-1hI0"
+        },
+        {
+            "id": "802",
+            "nombre": "Zeraora",
+            "tipo": "Eléctrico",
+            "debilidad": "Planta",
+            "generacion": 7,
+            "vida": "40",
+            "defensa": "7",
+            "ataque": "9",
+            "movimiento":"Puño voltio",
+            "descripcion":"N.° 807 Pokémon Rayo. Altura: 1,5 m. Peso: 44,5 kg",
+            "potencia":110,
+            "habilidades": {
+                "Placaje": 1,
+                "Puño voltio": 1.5,
+                "Puño fuego": 1.4,
+                "Fuerza telúrica": 1.6
+            },
+            "gif": "https://media1.tenor.com/m/asGxJ8hOkZsAAAAd/zeraora-glass-cat.gif",
+            "imagen": "https://i.pinimg.com/736x/1e/1b/13/1e1b1335b99e8115f230e5ffcfab88b5.jpg"
+        },
+        {
+            "id": "730",
+            "nombre": "Primarina",
+            "tipo": "Agua",
+            "debilidad": "Electrico",
+            "generacion": 7,
+            "vida": "50",
+            "defensa": "8",
+            "ataque": "8",
+            "movimiento":"Canto Mortal",
+            "descripcion":"N.° 821 Pokémon Agua. Altura: 1,80m. Peso: 72 kg",
+            "potencia":120,
+            "habilidades": {
+                "Placaje": 1,
+                "Burbujas": 1.5,
+                "Canto mortal": 1.6,
+                "Cascada": 1.4
+            },
+            "gif": "https://media1.tenor.com/m/9CJwYvgfnnoAAAAC/pokemon-primarina.gif",
+            "imagen": "https://wallpapercave.com/wp/wp8880597.jpg"
+        }]
+    }

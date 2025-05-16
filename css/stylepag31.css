@@ -1,0 +1,335 @@
+:root{
+    --rojo: #E63946;
+    --azul: #457b9d;
+    --amarrillo: #f1ee37;
+    --gris: #f1faee;
+    --negro: #1d3557;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P';
+}
+body {
+    font-family: 'Press Start 2P';
+}
+.container{
+    background-image: url('../storage/img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+.container-main-cards {
+    padding: 3vw 10vw 0vw 10vw;
+    display: flex;
+    gap: 10vw;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.carta1 {
+    display: flex;
+    border: 10px solid rgb(29, 53, 87);
+    border-radius: 25px;
+    background-color: white;
+    width: 31vw;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.flecha{
+    background-color: #fff;
+    border: none;
+    font-size: 5rem;
+}
+.flecha:hover{
+    text-shadow: 0px 0px 10px #91afda;
+    color: #91afda;
+}
+.container-image{
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    background-image: url(../storage/img/bulbasaur.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: 5px solid #457B9D;
+    height: 25vh;
+    width: 17vw;
+    margin: 1vw;
+}
+.texto{
+    justify-self: center;
+    width: 20vw;
+}
+.nombre {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1vh;
+}
+.fuerza {
+    padding: 1.5vh;
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+.info{
+    justify-self: center;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 15vw;
+}
+.container-btn{
+    justify-content: center;
+    display: flex;
+    margin: 1vw;
+}
+
+.btn-random {
+    width: 18vw;
+    height: 5vh;
+    background-color:rgb(241, 238, 55);
+    border-radius: 10px;
+    border: 3px solid #457B9D;
+    font-size: 1rem;
+    font-family: 'Press Start 2P';
+    cursor: pointer;
+
+}
+.versus {
+    justify-self: center;
+    font-size: 6rem;
+    color: #f1ee37;
+    text-shadow:
+    -5px -5px 2px    rgb(29, 53, 87),
+     5px -5px 2px rgb(29, 53, 87),
+    -5px  5px 2px rgb(29, 53, 87),
+     5px  5px 2px rgb(29, 53, 87);
+}
+
+.container-btn-luchar {
+    display: flex;
+    height: 12vh;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+}
+
+.btn-luchar {
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    color: #f1ee37;
+    background-color: #E63946;
+    text-shadow:
+    -5px -5px 2px    rgb(29, 53, 87),
+     5px -5px 2px rgb(29, 53, 87),
+    -5px  5px 2px rgb(29, 53, 87),
+     5px  5px 2px rgb(29, 53, 87);
+    font-size: 36px;
+    border-radius: 20px;
+    width:  20vw;
+    border: 5px solid  rgb(29, 53, 87),;
+    cursor: pointer;
+}
+
+.btn-luchar:hover {
+    background-color: var(--amarrillo);
+    color:var(--rojo);
+    text-shadow:
+    -5px -5px 2px    rgb(29, 53, 87),
+     5px -5px 2px rgb(29, 53, 87),
+    -5px  5px 2px rgb(29, 53, 87),
+     5px  5px 2px rgb(29, 53, 87);
+    border: 5px solid  rgb(29, 53, 87),;
+}
+@media (max-width: 1440px) and (min-width: 1000px){
+    .container-main-cards {
+        margin: 2vh 0vh 0vh 0vh;
+        padding: 0;
+        width: 100vw;
+        gap:2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .carta1 {
+        width: 90vw;  
+        height: auto;
+    }
+    .container-image {
+        width: 90vw; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image{
+        width: 30vw;
+        height: 30vh;
+        border: 6px solid #457B9D;
+    }
+    .texto{
+
+        margin: 0;
+        padding: 0;
+        width: 40vw;
+        text-align: justify;
+    }
+    .nombre{
+        font-size: 1.5rem;
+        width: 10vw;
+        justify-self: center;
+    }
+    .fuerza{
+        font-size: 1.5rem;
+        margin: 1vh 0 1vh 0;
+        padding: 0;
+    }
+    .info{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .btn-random{
+        width: 40vw;
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+    .container-btn{
+        grid-column: span 2 / span 2;
+    }
+    .btn-luchar{
+        margin: 5vh;
+        height: 10vh;
+        width: 30vw;
+    }
+}
+@media (max-width: 1000px) and (min-width: 500px){
+    .container-main-cards {
+        width: 100vw;
+        gap:2vh;
+        display: flex;
+        flex-direction: column; 
+    }
+    .carta1 {
+        width: 90vw;  
+        height: auto;
+    }
+    .container-image {
+        width: 70vw; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flecha{
+        width: 10vw;
+    }
+    .image{
+        width: 35vw;
+        margin: 2vw;
+    }
+    .texto{
+        margin: 0;
+        padding: 0;
+        width: 30vw;
+        text-align: justify;
+    }
+    .nombre{
+        font-size: 1.3rem;
+        width: 10vw;
+        justify-self: center;
+    }
+    .fuerza{
+        font-size: 1.3rem;
+        margin: 1vh 0 1vh 0;
+        padding: 0;
+    }
+    .info{
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+    .btn-random{
+        font-size: 1.3rem;
+        width: 40vw;
+    }
+    .container-btn{
+        grid-column: span 2 / span 2;
+    }
+    .btn-luchar{
+        margin: 2vh;
+        height: 10vh;
+        width: 40vw;
+    }
+}
+@media (max-width: 500px){
+    .container-main-cards {
+        width: 100vw;
+        gap:2vh;
+        display: flex;
+        flex-direction: column; 
+    }
+    .versus{
+        font-size: 3rem;
+    }
+    .carta1 {
+        width: 90vw;  
+        height: auto;
+    }
+    .flecha{
+        margin: 0 1vw 0 1vw;
+        width: 5vw;
+        font-size: 1.5rem;
+    }
+    .container-image {
+        width: 80vw; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image{
+        width: 40vw;
+        margin: 1vw;
+    }
+    .texto{
+        margin: 0;
+        padding: 0;
+        width: 30vw;
+        text-align: justify;
+    }
+    .nombre{
+        font-size: 0.6rem;
+        width: 10vw;
+        justify-self: center;
+    }
+    .fuerza{
+        font-size: 0.6rem;
+        margin: 1vh 0 1vh 0;
+        padding: 0;
+    }
+    .info{
+        font-size: 0.5rem;
+        text-align: justify;
+    }
+    .btn-random{
+        font-size: 1rem;
+        width: 40vw;
+    }
+    .container-btn{
+        grid-column: span 2 / span 2;
+    }
+    .btn-luchar{
+        text-align: center;
+        align-content: center;
+        font-size: 1.5rem;
+        margin: 2vh;
+        height: 10vh;
+        width: 60vw;
+        text-shadow:
+    -3px -3px 2px    rgb(29, 53, 87),
+     3px -3px 2px rgb(29, 53, 87),
+    -3px  3px 2px rgb(29, 53, 87),
+     3px  3px 2px rgb(29, 53, 87);
+    }
+}

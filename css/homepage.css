@@ -1,0 +1,153 @@
+:root{
+    --rojo: #E63946;
+    --azul: #457b9d;
+    --amarrillo: #f1ee37;
+    --gris: #f1faee;
+    --negro: #1d3557;
+}
+*{
+    font-family: "Press Start 2P", system-ui;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container-main{
+    background-image: url('../storage/img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+.container-inner{
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 10vh;
+}
+.logo {
+    width: 30vw;
+}
+.contenedor-texto {
+    padding: 3vw;
+    justify-content: center;
+    align-content: center;
+    background-color: #6D93F56B;
+    border-radius: 30px;
+    width: 60vw;
+}
+.titulo{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.texto {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5vh;
+}
+
+@media (min-width:200px){
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 160px;
+        
+}
+
+
+
+}
+
+@media(max-width: 1440px) and (min-width: 1000px){
+    .logo{
+        width: 30vw;
+        
+      
+    }
+
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 180px;
+        margin-top: 120px;
+        
+        
+    }
+}
+
+@media(max-width:1000px) and (min-width: 500px) {
+    .logo{
+        width: 70vw;
+        margin-bottom: 50px;
+        margin-top: 40px;    
+           
+    }
+
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 180px;
+        
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .texto{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+}
+@media(max-width: 500px) {
+    .logo{
+        width: 70vw;
+        margin-bottom: 50px;
+        margin-top: 40px;    
+            overflow: auto;
+        
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+    .texto{
+        font-size: 0.5rem;
+    }
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .container-main {
+        height: 81.5vh;
+       
+     
+        
+    }
+    .container-inner {
+        gap: 5vh;
+        
+    }
+    .logo {
+        width: 60vw;
+    }
+
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 50vh;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .texto {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+
+}

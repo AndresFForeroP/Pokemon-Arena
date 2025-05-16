@@ -1,0 +1,53 @@
+# 🕹️ Pokémon Battle Arena
+
+Una página web de arena de combates por turnos basada en el universo Pokémon. En esta arena, los entrenadores pueden enfrentarse entre sí o contra la CPU, eligiendo entre Pokémon de la **primera** y **séptima generación**.
+
+## 🌐 Características principales
+
+* ⚔️ **Sistema de combate por turnos**
+
+  * Modo **Jugador vs Jugador**
+  * Modo **Jugador vs CPU**
+  * Modo **CPU vs CPU**
+* 📚 **Sección de Pokédex**
+
+  * Visualiza todos los Pokémon disponibles
+  * Ordenados por **generación** (1ra y 7ma)
+  * Información relevante de cada Pokémon: nombre, tipo, estadísticas
+
+## 📸 Vista previa
+
+![Vista previa del combate y la Pokédex](./preview.png)
+*Captura de ejemplo (agrega aquí tu imagen real)*
+
+## 🚀 Cómo usar
+
+1. **Clona el repositorio**:
+
+   ```bash
+   git clone https://github.com/AndresFForeroP/Pokemon-Arena.git
+   cd pokemon-battle-arena
+   ```
+
+2. **Abre el proyecto en tu navegador**:
+   Solo abre el archivo `index.html` con cualquier navegador moderno.
+
+3. **Explora las secciones**:
+
+   * **Pokédex**: examina los Pokémon disponibles
+   * **Arena**: elige un modo de combate y disfruta la batalla
+
+## 🧠 Lógica del juego
+
+* El sistema de combate sigue turnos alternos entre los combatientes.
+* Cada Pokémon tiene estadísticas básicas (vida, ataque, defensa, velocidad).
+* El orden de ataque lo define la **velocidad**.
+* Los movimientos se calculan en base al ataque y defensa.
+* Los combates terminan cuando uno de los Pokémon queda sin puntos de vida.
+
+## 🧩 Tecnologías usadas
+
+* HTML5 + CSS3
+* JavaScript puro (sin frameworks)
+* Web Components (para organizar la UI)
+* Módulos de JS para control de batalla y renderizado de Pokémon

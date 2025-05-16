@@ -1,0 +1,220 @@
+:root {
+    --rojo: #E63946;
+    --azul: #457b9d;
+    --amarrillo: #f1ee37;
+    --gris: #f1faee;
+    --negro: #1d3557;
+}
+
+* {
+    font-family: "Press Start 2P", system-ui;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.all {
+    background-image: url("./../storage/img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    
+    overflow: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.up {
+    display: flex;
+    gap: 10vw;
+    margin: 4vh;
+}
+
+.card_a {
+    display: flex;
+    background-color: #6d94f585;
+    border-radius: 25px;
+    padding: 10px;
+    width: 28vw;
+    height: 36vh;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    transition: all 0.3s ease;
+}
+
+.card_a:hover {
+    background-color: var(--gris);
+    box-shadow: 0px 0px 10px #457b9d;
+}
+
+.player_card {
+    width: 8vw;
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    outline: 10px solid #1D3557;
+}
+
+.player1 {
+    background-image: url(../storage/img/player1.jpeg);
+}
+
+.player2 {
+    background-image: url(../storage/img/player2.jpeg);
+}
+
+.pc1 {
+    background-image: url(../storage/img/pc1.jpeg);
+}
+
+.pc2 {
+    background-image: url(../storage/img/pc2.jpeg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.vs {
+    font-size: 2rem;
+    text-align: center;
+    color: #f1ee37;
+    -webkit-text-stroke: 2px #1D3557;
+}
+
+.vs1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f1ee37;
+    -webkit-text-stroke: 2px #1D3557;
+}
+@media (max-width: 1440px) and (min-width: 1000px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+      
+    }
+
+    .all {
+        gap: 1vh;  
+       
+        
+    }
+
+    .up {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .card_a {
+        width: 60vw;
+        height: 35vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2vh;
+        margin-bottom: 50px;
+    }
+
+    .player_card {
+        width: 20vw;
+        height: 25vh;
+    }
+
+    .vs {
+        font-size: 1.5rem;
+    }
+
+    .vs1 {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1000px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .all {
+        gap: 3vh;
+        overflow-y: scroll;
+    }
+
+    .up {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .card_a {
+        width: 90vw;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2vh;
+        gap: 5vw;
+        margin-bottom: 15px;
+        
+    }
+
+    .player_card {
+        width: 25vw;
+        height: 15vh;
+        margin-top: 25px;
+    }
+
+    .vs {
+        font-size: 1.5rem;
+    }
+
+    .vs1 {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 600px) and (min-width: 480px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .all {
+        gap: 3vh;
+        padding: 1vh;
+    }
+
+    .up {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .card_a {
+        width: 80vw;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2vh;
+        gap: 3vw;
+    }
+
+    .player_card {
+        width: 30vw;
+        height: 15vh;
+    }
+
+    .vs {
+        font-size: 1.2rem;
+    }
+
+    .vs1 {
+        font-size: 1rem;
+    }
+}
