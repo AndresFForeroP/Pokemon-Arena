@@ -1,3 +1,4 @@
+//funciones del json 
 const URL_API = "http://localhost:3000/"
 const MYHEADERS = new Headers({
     "Content-Type": "application/json"

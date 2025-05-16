@@ -1,3 +1,4 @@
+//funcion necesaria para la musica de fondo dentro la pagina 
 function iniciarMusicaFondo() {
     const musicaFondo = document.getElementById('musicaFondo');
     if (musicaFondo) {

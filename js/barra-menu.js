@@ -1,3 +1,4 @@
+    //definicion de constantes de estilo de la barra del menu
 const home = `.barra-menu{
     box-shadow: 0px 6px 3px var(--azul);
     a{
@@ -146,7 +147,8 @@ const home = `.barra-menu{
 
     }
 }`
-const primera = `.barra-menu{
+const primera = `
+.barra-menu{
     box-shadow: 0px 6px 3px var(--azul);
     a{
         text-decoration: none;
@@ -240,6 +242,9 @@ const primera = `.barra-menu{
         }
         .home-menu{
             margin-left:40px;
+        }
+        #btn-primera{
+            width: 20px;
         }
         .primera-menu{
             font-size:20px;

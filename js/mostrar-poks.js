@@ -1,3 +1,4 @@
+//
 import { estilocarta } from "./estilocartas.js";
 export class cartaspokemon extends HTMLElement {
     constructor(){

@@ -1,3 +1,4 @@
+//importaciones de los modulos para la funcionalidad del del codigo!!
 "use strict";
 import {barraBusqueda} from "./barra-menu.js";
 let componenteBusqueda = document.querySelector('barra-menu');
@@ -8,7 +9,7 @@ const player = document.getElementById("2players");
 const pcplayer = document.getElementById("pc_player");
 const pc = document.getElementById("2pc");
 const sonidoClick = new Audio('../storage/audios/sonido-de-boton.wav');
-
+//agregar la funcion de player vs player 
 player.addEventListener("click",function(e) {
     e.preventDefault();
     const pp = 'playerxplayer';
@@ -28,7 +29,7 @@ player.addEventListener("click",function(e) {
     });
 });
 
-
+//agrega el evento de seleccion de player vs pc
 pcplayer.addEventListener("click", function(e) {
     e.preventDefault();
     const pp = 'playerxnpc';
@@ -44,7 +45,7 @@ pcplayer.addEventListener("click", function(e) {
     });
 });
 
-
+//agrega el evento de pc vs pc
 pc.addEventListener("click", function(e) {
     e.preventDefault();
     const pp = 'npcxnpc';

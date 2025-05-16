@@ -1,3 +1,4 @@
+  //Definicion de los turnos de jugador1 y jugador 2//
 let turno = 1;
 const jugador1 = {
   nombre: "Pikachu",
@@ -11,6 +12,7 @@ const jugador2 = {
   hp: 100,
   ataque: 18
 };
+// Animacion de ataque y funcionalidad 
 function animarAtaque(playerNum) {
   const carta = document.getElementById(`cardP${playerNum}`);
   if (!carta) return;
@@ -18,6 +20,7 @@ function animarAtaque(playerNum) {
   carta.classList.add("atacando");
   setTimeout(() => carta.classList.remove("atacando"), 300);
 }
+//funcion que permite desarrollar el ataque y habilita la barrra de vida 
 function atacar(playerNum) {
   animarAtaque(playerNum);
 

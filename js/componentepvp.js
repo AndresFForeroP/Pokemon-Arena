@@ -1,6 +1,11 @@
 let jugador1 = "";
 let jugador2 = "";
+// Define un nuevo componente personalizado <cartabatalla>
 export class cartabatalla extends HTMLElement{
+    /**
+     * Constructor del componente. Inicializa el Shadow DOM, recupera los pokemones seleccionados del localStorage
+     * y define el turno inicial.
+     */
     constructor(){
         super();
         this.attachShadow({mode:"open"});
@@ -9,10 +14,17 @@ export class cartabatalla extends HTMLElement{
         this.pokElegido2 = localStorage.getItem("pokemon2");
         this.turno = 1;
     }
+    /**
+     * Setter que recibe la lista de pokemones disponibles y llama al método render() para mostrar la batalla.
+     */
     set pokemones(value){
         this._pokemones = value;
         this.render();
     }
+    /**
+     * Renderiza toda la interfaz de batalla, crea elementos visuales, aplica estilos,
+     * y configura botones de ataque y modo de juego (manual o automático).
+     */
     render(){
         this._pokemones.forEach(pok => {
             if (pok.nombre == this.pokElegido1) {
@@ -245,6 +257,10 @@ export class cartabatalla extends HTMLElement{
             this.shadowRoot.getElementById("btnP2").style.display = "none"
         }
     }
+    /**
+     * Ejecuta el ataque de un jugador, reduce la vida del oponente, muestra animaciones,
+     * verifica si alguien ganó y controla el flujo de turnos según el modo de juego.
+     */
     atacar(playerNum) {
         this.animarAtaque(playerNum);
         const atacante = playerNum === 1 ? jugador1 : jugador2;
@@ -283,10 +299,17 @@ export class cartabatalla extends HTMLElement{
             this.shadowRoot.getElementById("btnP1").disabled = this.turno !== 1;
         }
     }
+    /**
+     * Activa o desactiva los botones de ataque según a quién le toque el turno actual.
+     */
     actualizarBotones() {
         this.shadowRoot.getElementById("btnP1").disabled = this.turno !== 1;
         this.shadowRoot.getElementById("btnP2").disabled = this.turno !== 2;
     }
+    /**
+     * Aplica animaciones CSS a la carta del jugador atacante y del defensor
+     * para simular el ataque visualmente.
+     */
     animarAtaque(playerNum) {
         const carta = this.shadowRoot.getElementById(`cardP${playerNum}`);
         if (!carta) return;
@@ -305,6 +328,9 @@ export class cartabatalla extends HTMLElement{
             setTimeout(() => cartarival.classList.remove("golpeado-izquierda"), 500);
         }        
     }
+    /**
+     * Simula un turno automático para un NPC, ejecutando el ataque y programando el siguiente si aplica.
+     */
     turnoAutomatico = () => {
         if (jugador1.hp <= 0 || jugador2.hp <= 0) return;
         this.atacar(this.turno);
@@ -312,6 +338,9 @@ export class cartabatalla extends HTMLElement{
             setTimeout(() => this.turnoAutomatico(), 1000);
         }
     }
+    /**
+     * Inicia una secuencia automática de turnos entre dos NPCs.
+     */
     iniciarBatallaAutomatica = () => {
         setTimeout(() => this.turnoAutomatico(), 1000);
     }
