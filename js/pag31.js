@@ -282,7 +282,7 @@ class tarjet extends HTMLElement {
                     </ul>
                 </div>
                 <div class="container-btn">
-                    <button class="btn-random">RANDOM</button>
+                    <button id="botonrandom" class="btn-random">RANDOM</button>
                 </div>
             </div>
             <button class="flecha" id="adelante">></button>
@@ -294,6 +294,10 @@ class tarjet extends HTMLElement {
     };
     this.shadowRoot.getElementById("adelante").onclick = () => {
         this._index = (this._index + 1) % this._data.length;
+        this.render();
+    };
+    this.shadowRoot.getElementById("botonrandom").onclick = () => {
+        this._index = Math.floor(Math.random() * 8);
         this.render();
     };
   };
@@ -589,6 +593,10 @@ class tarjet extends HTMLElement {
     };
     this.shadowRoot.getElementById("adelante").onclick = () => {
         this._index = (this._index + 1) % this._data.length;
+        this.render();
+    };
+    this.shadowRoot.getElementById("botonrandom").onclick = () => {
+        this._index = Math.floor(Math.random() * 8);
         this.render();
     };
   };
