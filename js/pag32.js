@@ -3,7 +3,9 @@ import {barraBusqueda} from "./barra-menu.js";
 let componenteBusqueda = document.querySelector('barra-menu');
 customElements.define('barra-menu',barraBusqueda)
 componenteBusqueda.categoria = "batalla";
-export const URL_API = "http://localhost:3000/";
+const sonidoClick = new Audio('storage/audios/sonidoataque.wav');
+
+export const URL_API = "/home/camper/Música/Pokemon-Arena/db.json";
 export const GetJson = async(categoria) => {
     try {
         const respuesta = await fetch(`${URL_API}${categoria}`)
@@ -70,7 +72,7 @@ function atacar(playerNum) {
   barra.style.width = `${porcentaje}%`;
   texto.innerText = defensor.hp;
 
-  // esto es para desactivar botones si alguien gana
+ 
   if (defensor.hp <= 0) {
     alert(`${atacante.nombre} gana la batalla!`);
     document.getElementById("btnP1").disabled = true;
@@ -89,8 +91,16 @@ function actualizarBotones() {
 
 // Iniciar
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("btnP1").addEventListener("click", () => atacar(1));
-  document.getElementById("btnP2").addEventListener("click", () => atacar(2));
+  document.getElementById("btnP1").addEventListener("click", () => {
+    sonidoClick.play(); 
+    atacar(1);
+  });
+  
+
+  document.getElementById("btnP2").addEventListener("click", () =>{
+    sonidoClick.play(); 
+    atacar(2)
+  } );
 
   document.getElementById("vidaP1").style.width = "100%";
   document.getElementById("vidaP2").style.width = "100%";

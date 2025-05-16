@@ -7,20 +7,60 @@ componenteBusqueda.categoria = "batalla";
 const player = document.getElementById("2players");
 const pcplayer = document.getElementById("pc_player");
 const pc = document.getElementById("2pc");
+const sonidoClick = new Audio('../storage/audios/sonido-de-boton.wav');
 
 player.addEventListener("click",function(e) {
     e.preventDefault();
     const pp = 'playerxplayer';
-    window.location.href = "pag32.html";
-    localStorage.setItem("modo", pp);
+    sonidoClick.currentTime = 0; 
+
+    sonidoClick.play().then(() => {
+        
+        setTimeout(() => {
+            localStorage.setItem("modo", pp);
+            window.location.href = "pag32.html";
+        }, 300);
+    }).catch(err => {
+        console.warn("No se pudo reproducir el sonido:", err);
+       
+        localStorage.setItem("modo", pp);
+        window.location.href = "pag32.html";
+    });
 });
-pcplayer.addEventListener("click",function(e) {
+
+
+pcplayer.addEventListener("click", function(e) {
     e.preventDefault();
-    alert('click player and pc');
     const pp = 'playerxnpc';
+    sonidoClick.currentTime = 0;
+    sonidoClick.play().then(() => {
+        setTimeout(() => {
+            localStorage.setItem("modo", pp);
+            
+        }, 300);
+    }).catch(err => {
+        console.warn("Error al reproducir sonido:", err);
+        localStorage.setItem("modo", pp);
+        window.location.href = "pag32.html";
+        
+    });
 });
-pc.addEventListener("click",function(e) {
+
+
+pc.addEventListener("click", function(e) {
     e.preventDefault();
-    alert('click 2pc');
     const pp = 'npcxnpc';
+    sonidoClick.currentTime = 0;
+    sonidoClick.play().then(() => {
+        setTimeout(() => {
+            localStorage.setItem("modo", pp);
+            
+        
+        }, 300);
+    }).catch(err => {
+        console.warn("Error al reproducir sonido:", err);
+        localStorage.setItem("modo", pp);
+        window.location.href = "pag32.html";
+        alert('click 2pc');
+    });
 });

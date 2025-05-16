@@ -314,7 +314,7 @@ class tarjet extends HTMLElement {
     };
   };
 };
-class tarjets extends HTMLElement {
+ export class tarjets extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
