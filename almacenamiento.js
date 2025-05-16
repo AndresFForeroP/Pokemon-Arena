@@ -1,19 +1,16 @@
 let turno = 1;
-const player1 = {
+const jugador1 = {
   nombre: "Pikachu",
   vida: 100,
   hp: 100,
   ataque: 20
 };
-
-const player2 = {
+const jugador2 = {
   nombre: "Charmander",
   vida: 100,
   hp: 100,
   ataque: 18
 };
-
-
 function animarAtaque(playerNum) {
   const carta = document.getElementById(`cardP${playerNum}`);
   if (!carta) return;
@@ -21,13 +18,11 @@ function animarAtaque(playerNum) {
   carta.classList.add("atacando");
   setTimeout(() => carta.classList.remove("atacando"), 300);
 }
-
-
 function atacar(playerNum) {
   animarAtaque(playerNum);
 
-  const atacante = playerNum === 1 ? player1 : player2;
-  const defensor = playerNum === 1 ? player2 : player1;
+  const atacante = playerNum === 1 ? jugador1 : jugador2;
+  const defensor = playerNum === 1 ? jugador2 : jugador1;
 
   const vidaBarra = playerNum === 1 ? "vidaP2" : "vidaP1";
   const vidaTexto = playerNum === 1 ? "vidaTextoP2" : "vidaTextoP1";
@@ -64,22 +59,16 @@ function actualizarBotones() {
 // Iniciar
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnP1").addEventListener("click", () => {
-    
     atacar(1);
   });
-  
-
   document.getElementById("btnP2").addEventListener("click", () =>{
-    sonidoClick.play(); 
     atacar(2)
   } );
-
   document.getElementById("vidaP1").style.width = "100%";
   document.getElementById("vidaP2").style.width = "100%";
-  document.getElementById("vidaTextoP1").innerText = player1.hp;
-  document.getElementById("vidaTextoP2").innerText = player2.hp;
-  document.getElementById("ataqueP1").innerText = player1.ataque;
-  document.getElementById("ataqueP2").innerText = player2.ataque;
-
+  document.getElementById("vidaTextoP1").innerText = jugador1.hp;
+  document.getElementById("vidaTextoP2").innerText = jugador2.hp;
+  document.getElementById("ataqueP1").innerText = jugador1.ataque;
+  document.getElementById("ataqueP2").innerText = jugador2.ataque;
   actualizarBotones();
 });

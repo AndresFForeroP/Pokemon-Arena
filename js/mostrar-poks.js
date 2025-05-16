@@ -93,8 +93,9 @@ export class cartaspokemon extends HTMLElement {
             carta.style.transition = "1s"
             carta.style.transform = "rotatey(0deg)"
             setTimeout(() => {
-                location.reload();
-            }, 430);  
+                this.shadowRoot.innerHTML = "";
+                this.render();
+            }, 350);  
         })
     })
     });

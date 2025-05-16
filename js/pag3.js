@@ -36,13 +36,11 @@ pcplayer.addEventListener("click", function(e) {
     sonidoClick.play().then(() => {
         setTimeout(() => {
             localStorage.setItem("modo", pp);
-            
+            window.location.href = "pag31.html";
         }, 300);
     }).catch(err => {
         console.warn("Error al reproducir sonido:", err);
-        localStorage.setItem("modo", pp);
-        window.location.href = "pag31.html";
-        
+        localStorage.setItem("modo", pp); 
     });
 });
 
@@ -54,7 +52,7 @@ pc.addEventListener("click", function(e) {
     sonidoClick.play().then(() => {
         setTimeout(() => {
             localStorage.setItem("modo", pp);
-            
+            window.location.href = "pag31.html";
         
         }, 300);
     }).catch(err => {

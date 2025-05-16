@@ -1,26 +1,9 @@
 "use strict";
 import {barraBusqueda} from "./barra-menu.js";
+import {GetJson} from "./funcionesJson.js";
 let componenteBusqueda = document.querySelector('barra-menu');
 customElements.define('barra-menu',barraBusqueda)
 componenteBusqueda.categoria = "batalla";
-export const URL_API = "http://localhost:3000/";
-export const GetJson = async(categoria) => {
-    try {
-        const respuesta = await fetch(`${URL_API}${categoria}`)
-        if (respuesta.status == 200) {
-            const datos = await respuesta.json();
-            return datos
-        }else if (respuesta.status == 401) {
-            console.log("La url no es correcta");
-        }else if (respuesta.status == 404) {
-            console.log(`${categoria} no existe`);
-        }else {
-            console.log("Se presento un error en la peticion")
-        }
-    }catch(error){
-        console.log(error);
-    }
-}
 class tarjet extends HTMLElement {
     constructor() {
         super();
@@ -43,6 +26,7 @@ class tarjet extends HTMLElement {
     render() {
         if (!this._data.length) return;
         const personaje = this._data[this._index];
+        localStorage.setItem("pokemon1",personaje.nombre)
         this.shadowRoot.innerHTML=/* html */`
         <style>
             .carta1 {
@@ -336,6 +320,7 @@ class tarjet extends HTMLElement {
     render() {
         if (!this._data.length) return;
         const personaje = this._data[this._index];
+        localStorage.setItem("pokemon2",personaje.nombre)
         this.shadowRoot.innerHTML=/* html */`
         <style>
             .carta1 {
@@ -619,14 +604,8 @@ let player2 = "";
 document.getElementById("iniciarbatalla").onclick = () => {
     player1 = tarjeta.data[tarjeta._index];
      player2 = tarjetas.data[tarjetas._index];
-     document.getElementById("iniciarbatalla").style.display = "none"; 
-  
-   
+     document.getElementById("iniciarbatalla").style.display = "none";
 };
-
-
-
-
 GetJson("Primera").then(datos =>{
     const Primera = datos;
     console.log(Primera)

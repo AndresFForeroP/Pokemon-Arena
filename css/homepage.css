@@ -50,26 +50,65 @@ body {
     font-size: 1.5rem;
     line-height: 2.5vh;
 }
+
+@media (min-width:200px){
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 160px;
+        
+}
+
+
+
+}
+
 @media(max-width: 1440px) and (min-width: 1000px){
     .logo{
-        width: 60vw;
+        width: 30vw;
+        
+      
+    }
+
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 180px;
+        margin-top: 120px;
+        
+        
     }
 }
 
 @media(max-width:1000px) and (min-width: 500px) {
     .logo{
         width: 70vw;
+        margin-bottom: 50px;
+        margin-top: 40px;    
+           
+    }
+
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 180px;
+        
     }
     .titulo{
         font-size: 1.5rem;
     }
     .texto{
         font-size: 1rem;
+        line-height: 30px;
     }
 }
 @media(max-width: 500px) {
     .logo{
         width: 70vw;
+        margin-bottom: 50px;
+        margin-top: 40px;    
+            overflow: auto;
+        
     }
     .titulo{
         font-size: 1rem;
@@ -77,4 +116,38 @@ body {
     .texto{
         font-size: 0.5rem;
     }
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .container-main {
+        height: 81.5vh;
+       
+     
+        
+    }
+    .container-inner {
+        gap: 5vh;
+        
+    }
+    .logo {
+        width: 60vw;
+    }
+
+    .contenedor-texto {
+        width: 75vw;
+        padding: 4vw;
+        margin-bottom: 50vh;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .texto {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+
 }
